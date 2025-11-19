@@ -1,6 +1,6 @@
-import { j as r } from "./HCMThanks__loadShare__react_mf_2_dom__loadShare__-C2LK0lnC.mjs";
-import { H as o } from "./HCMThanks__loadShare__react__loadShare__-CBneMpWg.mjs";
-import { u as n, A as l, M as m } from "./MFApp-BZIejuFw.mjs";
+import { j as r } from "./HCMThanks__loadShare__react_mf_2_dom__loadShare__-CSA9EE5I.mjs";
+import { H as o } from "./HCMThanks__loadShare__react__loadShare__-BpyvZBBP.mjs";
+import { u as n, A as l, M as m } from "./MFApp-D60O11-4.mjs";
 function i(e) {
   return typeof e == "string" ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(e) : !1;
 }
