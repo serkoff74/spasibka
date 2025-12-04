@@ -1,0 +1,2706 @@
+var index_cjs$3 = {}, index_cjs$2 = {}, polyfills_cjs$1 = {};
+function _extends$2() {
+  return _extends$2 = Object.assign || function(e) {
+    for (var r = 1; r < arguments.length; r++) {
+      var o = arguments[r];
+      for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (e[n] = o[n]);
+    }
+    return e;
+  }, _extends$2.apply(this, arguments);
+}
+function _object_without_properties_loose(t, e) {
+  if (t == null) return {};
+  var r = {}, o = Object.keys(t), n, i;
+  for (i = 0; i < o.length; i++)
+    n = o[i], !(e.indexOf(n) >= 0) && (r[n] = t[n]);
+  return r;
+}
+polyfills_cjs$1._extends = _extends$2;
+polyfills_cjs$1._object_without_properties_loose = _object_without_properties_loose;
+var index_cjs$1 = {}, polyfills_cjs = {};
+function _extends$1() {
+  return _extends$1 = Object.assign || function(e) {
+    for (var r = 1; r < arguments.length; r++) {
+      var o = arguments[r];
+      for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (e[n] = o[n]);
+    }
+    return e;
+  }, _extends$1.apply(this, arguments);
+}
+polyfills_cjs._ = _extends$1;
+var define_process_env_default = { XDG_ACTIVATION_TOKEN: "gnome-shell/WebStorm/4708-5-serko-raider-ubuntu_TIME14253469", GJS_DEBUG_TOPICS: "JS ERROR;JS LOG", APPCODE_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/appcode.vmoptions", GATEWAY_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/gateway.vmoptions", MISNG_CHECK_TS_PARALLEL: "1", USER: "serko", npm_config_user_agent: "yarn/4.9.2 npm/? node/v18.17.1 linux x64", WEBSTORM_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/webstorm.vmoptions", WEBIDE_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/webide.vmoptions", XDG_SESSION_TYPE: "x11", npm_node_execpath: "/tmp/xfs-ddc26295/node", SHLVL: "0", HOME: "/home/serko", DESKTOP_SESSION: "ubuntu", npm_package_json: "/mnt/Programming/Projects/HH/ubuntu/hr-tech/edp-frontend/packages/applications/hcm-app/package.json", GIO_LAUNCHED_DESKTOP_FILE: "/usr/share/applications/jetbrains-webstorm.desktop", GTK_MODULES: "gail:atk-bridge", GNOME_SHELL_SESSION_MODE: "ubuntu", MANAGERPID: "4379", DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/1000/bus", DATASPELL_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/dataspell.vmoptions", SYSTEMD_EXEC_PID: "4708", DATAGRIP_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/datagrip.vmoptions", IDEA_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/idea.vmoptions", GIO_LAUNCHED_DESKTOP_FILE_PID: "813378", DEBUGINFOD_URLS: "https://debuginfod.ubuntu.com ", IM_CONFIG_PHASE: "1", CLION_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/clion.vmoptions", LOGNAME: "serko", JOURNAL_STREAM: "8:59316", JETBRAINSCLIENT_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/jetbrainsclient.vmoptions", _: "/usr/bin/dbus-update-activation-environment", XDG_SESSION_CLASS: "user", USERNAME: "serko", STUDIO_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/studio.vmoptions", TERM: "xterm-256color", PHPSTORM_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/phpstorm.vmoptions", GNOME_DESKTOP_SESSION_ID: "this-is-deprecated", WINDOWPATH: "2", PATH: "/tmp/xfs-ddc26295:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin", INVOCATION_ID: "1b600a86f5df4be4aaa0bec5f7acd5e4", RIDER_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/rider.vmoptions", SESSION_MANAGER: "local/serko-raider-ubuntu:@/tmp/.ICE-unix/4687,unix/serko-raider-ubuntu:/tmp/.ICE-unix/4687", DEVECOSTUDIO_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/devecostudio.vmoptions", GTK3_MODULES: "xapp-gtk3-module", npm_package_name: "@hr-tech/hcm-micro-frontends", XDG_MENU_PREFIX: "gnome-", XDG_RUNTIME_DIR: "/run/user/1000", DISPLAY: ":1", XDG_CURRENT_DESKTOP: "ubuntu:GNOME", MIS_NPM_AUTH_TOKEN: "NpmToken.b9567dd4-9055-3aaf-bf88-9ef0651e16ac", LANG: "en_US.UTF-8", XAUTHORITY: "/run/user/1000/gdm/Xauthority", XMODIFIERS: "@im=ibus", XDG_SESSION_DESKTOP: "ubuntu", GOLAND_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/goland.vmoptions", SSH_AGENT_LAUNCHER: "openssh", SSH_AUTH_SOCK: "/run/user/1000/keyring/ssh", PROJECT_CWD: "/mnt/Programming/Projects/HH/ubuntu/hr-tech/edp-frontend", SHELL: "/bin/bash", npm_package_version: "1.0.0", npm_lifecycle_event: "build:remotes", GDMSESSION: "ubuntu", QT_ACCESSIBILITY: "1", PYCHARM_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/pycharm.vmoptions", GPG_AGENT_INFO: "/run/user/1000/gnupg/S.gpg-agent:0:1", GJS_DEBUG_OUTPUT: "stderr", NLSPATH: "/opt/cprocsp/share/locale/%L/LC_MESSAGES/%N", QT_IM_MODULE: "ibus", RUBYMINE_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/rubymine.vmoptions", PWD: "/mnt/Programming/Projects/HH/ubuntu/hr-tech/edp-frontend/packages/applications/hcm-app", JETBRAINS_CLIENT_VM_OPTIONS: "/home/serko/Programs/jetbra2024/vmoptions/jetbrains_client.vmoptions", BERRY_BIN_FOLDER: "/tmp/xfs-ddc26295", npm_execpath: "/tmp/xfs-ddc26295/yarn", XDG_DATA_DIRS: "/usr/share/ubuntu:/usr/share/gnome:/home/serko/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop", XDG_CONFIG_DIRS: "/etc/xdg/xdg-ubuntu:/etc/xdg", INIT_CWD: "/mnt/Programming/Projects/HH/ubuntu/hr-tech/edp-frontend/packages/applications/hcm-app", NODE_ENV: "production" }, polyfills$1 = polyfills_cjs;
+const FederationModuleManifest = "federation-manifest.json", MANIFEST_EXT = ".json", BROWSER_LOG_KEY = "FEDERATION_DEBUG", NameTransformSymbol = {
+  AT: "@",
+  HYPHEN: "-",
+  SLASH: "/"
+}, NameTransformMap = {
+  [NameTransformSymbol.AT]: "scope_",
+  [NameTransformSymbol.HYPHEN]: "_",
+  [NameTransformSymbol.SLASH]: "__"
+}, EncodedNameTransformMap = {
+  [NameTransformMap[NameTransformSymbol.AT]]: NameTransformSymbol.AT,
+  [NameTransformMap[NameTransformSymbol.HYPHEN]]: NameTransformSymbol.HYPHEN,
+  [NameTransformMap[NameTransformSymbol.SLASH]]: NameTransformSymbol.SLASH
+}, SEPARATOR = ":", ManifestFileName = "mf-manifest.json", StatsFileName = "mf-stats.json", MFModuleType = {
+  NPM: "npm",
+  APP: "app"
+}, MODULE_DEVTOOL_IDENTIFIER = "__MF_DEVTOOLS_MODULE_INFO__", ENCODE_NAME_PREFIX = "ENCODE_NAME_PREFIX", TEMP_DIR = ".federation", MFPrefetchCommon = {
+  identifier: "MFDataPrefetch",
+  globalKey: "__PREFETCH__",
+  library: "mf-data-prefetch",
+  exportsKey: "__PREFETCH_EXPORTS__",
+  fileName: "bootstrap.js"
+};
+var ContainerPlugin = /* @__PURE__ */ Object.freeze({
+  __proto__: null
+}), ContainerReferencePlugin = /* @__PURE__ */ Object.freeze({
+  __proto__: null
+}), ModuleFederationPlugin = /* @__PURE__ */ Object.freeze({
+  __proto__: null
+}), SharePlugin = /* @__PURE__ */ Object.freeze({
+  __proto__: null
+});
+function isBrowserEnv() {
+  return typeof window < "u" && typeof window.document < "u";
+}
+function isReactNativeEnv() {
+  var t;
+  return typeof navigator < "u" && ((t = navigator) == null ? void 0 : t.product) === "ReactNative";
+}
+function isBrowserDebug() {
+  try {
+    if (isBrowserEnv() && window.localStorage)
+      return !!localStorage.getItem(BROWSER_LOG_KEY);
+  } catch {
+    return !1;
+  }
+  return !1;
+}
+function isDebugMode() {
+  return typeof process < "u" && define_process_env_default && define_process_env_default.FEDERATION_DEBUG ? !!define_process_env_default.FEDERATION_DEBUG : typeof FEDERATION_DEBUG < "u" && FEDERATION_DEBUG ? !0 : isBrowserDebug();
+}
+const getProcessEnv = function() {
+  return typeof process < "u" && define_process_env_default ? define_process_env_default : {};
+}, LOG_CATEGORY$1 = "[ Federation Runtime ]", parseEntry = (t, e, r = SEPARATOR) => {
+  const o = t.split(r), n = getProcessEnv().NODE_ENV === "development" && e, i = "*", a = (s) => s.startsWith("http") || s.includes(MANIFEST_EXT);
+  if (o.length >= 2) {
+    let [s, ...l] = o;
+    t.startsWith(r) && (s = o.slice(0, 2).join(r), l = [
+      n || o.slice(2).join(r)
+    ]);
+    let c = n || l.join(r);
+    return a(c) ? {
+      name: s,
+      entry: c
+    } : {
+      name: s,
+      version: c || i
+    };
+  } else if (o.length === 1) {
+    const [s] = o;
+    return n && a(n) ? {
+      name: s,
+      entry: n
+    } : {
+      name: s,
+      version: n || i
+    };
+  } else
+    throw `Invalid entry value: ${t}`;
+}, composeKeyWithSeparator = function(...t) {
+  return t.length ? t.reduce((e, r) => r ? e ? `${e}${SEPARATOR}${r}` : r : e, "") : "";
+}, encodeName = function(t, e = "", r = !1) {
+  try {
+    const o = r ? ".js" : "";
+    return `${e}${t.replace(new RegExp(`${NameTransformSymbol.AT}`, "g"), NameTransformMap[NameTransformSymbol.AT]).replace(new RegExp(`${NameTransformSymbol.HYPHEN}`, "g"), NameTransformMap[NameTransformSymbol.HYPHEN]).replace(new RegExp(`${NameTransformSymbol.SLASH}`, "g"), NameTransformMap[NameTransformSymbol.SLASH])}${o}`;
+  } catch (o) {
+    throw o;
+  }
+}, decodeName = function(t, e, r) {
+  try {
+    let o = t;
+    if (e) {
+      if (!o.startsWith(e))
+        return o;
+      o = o.replace(new RegExp(e, "g"), "");
+    }
+    return o = o.replace(new RegExp(`${NameTransformMap[NameTransformSymbol.AT]}`, "g"), EncodedNameTransformMap[NameTransformMap[NameTransformSymbol.AT]]).replace(new RegExp(`${NameTransformMap[NameTransformSymbol.SLASH]}`, "g"), EncodedNameTransformMap[NameTransformMap[NameTransformSymbol.SLASH]]).replace(new RegExp(`${NameTransformMap[NameTransformSymbol.HYPHEN]}`, "g"), EncodedNameTransformMap[NameTransformMap[NameTransformSymbol.HYPHEN]]), r && (o = o.replace(".js", "")), o;
+  } catch (o) {
+    throw o;
+  }
+}, generateExposeFilename = (t, e) => {
+  if (!t)
+    return "";
+  let r = t;
+  return r === "." && (r = "default_export"), r.startsWith("./") && (r = r.replace("./", "")), encodeName(r, "__federation_expose_", e);
+}, generateShareFilename = (t, e) => t ? encodeName(t, "__federation_shared_", e) : "", getResourceUrl = (t, e) => {
+  if ("getPublicPath" in t) {
+    let r;
+    return t.getPublicPath.startsWith("function") ? r = new Function("return " + t.getPublicPath)()() : r = new Function(t.getPublicPath)(), `${r}${e}`;
+  } else return "publicPath" in t ? !isBrowserEnv() && !isReactNativeEnv() && "ssrPublicPath" in t ? `${t.ssrPublicPath}${e}` : `${t.publicPath}${e}` : (console.warn("Cannot get resource URL. If in debug mode, please ignore.", t, e), "");
+}, assert$1 = (t, e) => {
+  t || error$1(e);
+}, error$1 = (t) => {
+  throw new Error(`${LOG_CATEGORY$1}: ${t}`);
+}, warn$1 = (t) => {
+  console.warn(`${LOG_CATEGORY$1}: ${t}`);
+};
+function safeToString(t) {
+  try {
+    return JSON.stringify(t, null, 2);
+  } catch {
+    return "";
+  }
+}
+const VERSION_PATTERN_REGEXP = /^([\d^=v<>~]|[*xX]$)/;
+function isRequiredVersion(t) {
+  return VERSION_PATTERN_REGEXP.test(t);
+}
+const simpleJoinRemoteEntry = (t, e) => {
+  if (!t)
+    return e;
+  const o = ((n) => {
+    if (n === ".")
+      return "";
+    if (n.startsWith("./"))
+      return n.replace("./", "");
+    if (n.startsWith("/")) {
+      const i = n.slice(1);
+      return i.endsWith("/") ? i.slice(0, -1) : i;
+    }
+    return n;
+  })(t);
+  return o ? o.endsWith("/") ? `${o}${e}` : `${o}/${e}` : e;
+};
+function inferAutoPublicPath(t) {
+  return t.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+}
+function generateSnapshotFromManifest(t, e = {}) {
+  var r, o;
+  const { remotes: n = {}, overrides: i = {}, version: a } = e;
+  let s;
+  const l = () => "publicPath" in t.metaData ? t.metaData.publicPath === "auto" && a ? inferAutoPublicPath(a) : t.metaData.publicPath : t.metaData.getPublicPath, c = Object.keys(i);
+  let u = {};
+  if (!Object.keys(n).length) {
+    var d;
+    u = ((d = t.remotes) == null ? void 0 : d.reduce((E, R) => {
+      let N;
+      const T = R.federationContainerName;
+      return c.includes(T) ? N = i[T] : "version" in R ? N = R.version : N = R.entry, E[T] = {
+        matchedVersion: N
+      }, E;
+    }, {})) || {};
+  }
+  Object.keys(n).forEach((E) => u[E] = {
+    // overrides will override dependencies
+    matchedVersion: c.includes(E) ? i[E] : n[E]
+  });
+  const { remoteEntry: { path: p, name: m, type: _ }, types: y, buildInfo: { buildVersion: h }, globalName: g, ssrRemoteEntry: I } = t.metaData, { exposes: b } = t;
+  let S = {
+    version: a || "",
+    buildVersion: h,
+    globalName: g,
+    remoteEntry: simpleJoinRemoteEntry(p, m),
+    remoteEntryType: _,
+    remoteTypes: simpleJoinRemoteEntry(y.path, y.name),
+    remoteTypesZip: y.zip || "",
+    remoteTypesAPI: y.api || "",
+    remotesInfo: u,
+    shared: t?.shared.map((E) => ({
+      assets: E.assets,
+      sharedName: E.name,
+      version: E.version
+    })),
+    modules: b?.map((E) => ({
+      moduleName: E.name,
+      modulePath: E.path,
+      assets: E.assets
+    }))
+  };
+  if ((r = t.metaData) != null && r.prefetchInterface) {
+    const E = t.metaData.prefetchInterface;
+    S = polyfills$1._({}, S, {
+      prefetchInterface: E
+    });
+  }
+  if ((o = t.metaData) != null && o.prefetchEntry) {
+    const { path: E, name: R, type: N } = t.metaData.prefetchEntry;
+    S = polyfills$1._({}, S, {
+      prefetchEntry: simpleJoinRemoteEntry(E, R),
+      prefetchEntryType: N
+    });
+  }
+  if ("publicPath" in t.metaData ? s = polyfills$1._({}, S, {
+    publicPath: l(),
+    ssrPublicPath: t.metaData.ssrPublicPath
+  }) : s = polyfills$1._({}, S, {
+    getPublicPath: l()
+  }), I) {
+    const E = simpleJoinRemoteEntry(I.path, I.name);
+    s.ssrRemoteEntry = E, s.ssrRemoteEntryType = I.type || "commonjs-module";
+  }
+  return s;
+}
+function isManifestProvider(t) {
+  return !!("remoteEntry" in t && t.remoteEntry.includes(MANIFEST_EXT));
+}
+const PREFIX = "[ Module Federation ]";
+let Logger = class {
+  setPrefix(e) {
+    this.prefix = e;
+  }
+  log(...e) {
+    console.log(this.prefix, ...e);
+  }
+  warn(...e) {
+    console.log(this.prefix, ...e);
+  }
+  error(...e) {
+    console.log(this.prefix, ...e);
+  }
+  success(...e) {
+    console.log(this.prefix, ...e);
+  }
+  info(...e) {
+    console.log(this.prefix, ...e);
+  }
+  ready(...e) {
+    console.log(this.prefix, ...e);
+  }
+  debug(...e) {
+    isDebugMode() && console.log(this.prefix, ...e);
+  }
+  constructor(e) {
+    this.prefix = e;
+  }
+};
+function createLogger(t) {
+  return new Logger(t);
+}
+const logger$1 = createLogger(PREFIX);
+async function safeWrapper$1(t, e) {
+  try {
+    return await t();
+  } catch (r) {
+    !e && warn$1(r);
+    return;
+  }
+}
+function isStaticResourcesEqual$1(t, e) {
+  const r = /^(https?:)?\/\//i, o = t.replace(r, "").replace(/\/$/, ""), n = e.replace(r, "").replace(/\/$/, "");
+  return o === n;
+}
+function createScript(t) {
+  let e = null, r = !0, o = 2e4, n;
+  const i = document.getElementsByTagName("script");
+  for (let s = 0; s < i.length; s++) {
+    const l = i[s], c = l.getAttribute("src");
+    if (c && isStaticResourcesEqual$1(c, t.url)) {
+      e = l, r = !1;
+      break;
+    }
+  }
+  if (!e) {
+    const s = t.attrs;
+    e = document.createElement("script"), e.type = s?.type === "module" ? "module" : "text/javascript";
+    let l;
+    t.createScriptHook && (l = t.createScriptHook(t.url, t.attrs), l instanceof HTMLScriptElement ? e = l : typeof l == "object" && ("script" in l && l.script && (e = l.script), "timeout" in l && l.timeout && (o = l.timeout))), e.src || (e.src = t.url), s && !l && Object.keys(s).forEach((c) => {
+      e && (c === "async" || c === "defer" ? e[c] = s[c] : e.getAttribute(c) || e.setAttribute(c, s[c]));
+    });
+  }
+  const a = async (s, l) => {
+    clearTimeout(n);
+    const c = () => {
+      l?.type === "error" ? t?.onErrorCallback && t?.onErrorCallback(l) : t?.cb && t?.cb();
+    };
+    if (e && (e.onerror = null, e.onload = null, safeWrapper$1(() => {
+      const { needDeleteScript: u = !0 } = t;
+      u && e?.parentNode && e.parentNode.removeChild(e);
+    }), s && typeof s == "function")) {
+      const u = s(l);
+      if (u instanceof Promise) {
+        const d = await u;
+        return c(), d;
+      }
+      return c(), u;
+    }
+    c();
+  };
+  return e.onerror = a.bind(null, e.onerror), e.onload = a.bind(null, e.onload), n = setTimeout(() => {
+    a(null, new Error(`Remote script "${t.url}" time-outed.`));
+  }, o), {
+    script: e,
+    needAttach: r
+  };
+}
+function createLink(t) {
+  let e = null, r = !0;
+  const o = document.getElementsByTagName("link");
+  for (let i = 0; i < o.length; i++) {
+    const a = o[i], s = a.getAttribute("href"), l = a.getAttribute("rel");
+    if (s && isStaticResourcesEqual$1(s, t.url) && l === t.attrs.rel) {
+      e = a, r = !1;
+      break;
+    }
+  }
+  if (!e) {
+    e = document.createElement("link"), e.setAttribute("href", t.url);
+    let i;
+    const a = t.attrs;
+    t.createLinkHook && (i = t.createLinkHook(t.url, a), i instanceof HTMLLinkElement && (e = i)), a && !i && Object.keys(a).forEach((s) => {
+      e && !e.getAttribute(s) && e.setAttribute(s, a[s]);
+    });
+  }
+  const n = (i, a) => {
+    const s = () => {
+      a?.type === "error" ? t?.onErrorCallback && t?.onErrorCallback(a) : t?.cb && t?.cb();
+    };
+    if (e && (e.onerror = null, e.onload = null, safeWrapper$1(() => {
+      const { needDeleteLink: l = !0 } = t;
+      l && e?.parentNode && e.parentNode.removeChild(e);
+    }), i)) {
+      const l = i(a);
+      return s(), l;
+    }
+    s();
+  };
+  return e.onerror = n.bind(null, e.onerror), e.onload = n.bind(null, e.onload), {
+    link: e,
+    needAttach: r
+  };
+}
+function loadScript(t, e) {
+  const { attrs: r = {}, createScriptHook: o } = e;
+  return new Promise((n, i) => {
+    const { script: a, needAttach: s } = createScript({
+      url: t,
+      cb: n,
+      onErrorCallback: i,
+      attrs: polyfills$1._({
+        fetchpriority: "high"
+      }, r),
+      createScriptHook: o,
+      needDeleteScript: !0
+    });
+    s && document.head.appendChild(a);
+  });
+}
+const sdkImportCache = /* @__PURE__ */ new Map();
+function importNodeModule(t) {
+  if (!t)
+    throw new Error("import specifier is required");
+  if (sdkImportCache.has(t))
+    return sdkImportCache.get(t);
+  const r = new Function("name", "return import(name)")(t).then((o) => o).catch((o) => {
+    throw console.error(`Error importing module ${t}:`, o), sdkImportCache.delete(t), o;
+  });
+  return sdkImportCache.set(t, r), r;
+}
+const loadNodeFetch = async () => {
+  const t = await importNodeModule("node-fetch");
+  return t.default || t;
+}, lazyLoaderHookFetch = async (t, e, r) => {
+  const n = await ((i, a) => r.lifecycle.fetch.emit(i, a))(t, e || {});
+  return !n || !(n instanceof Response) ? (typeof fetch > "u" ? await loadNodeFetch() : fetch)(t, e || {}) : n;
+}, createScriptNode = typeof ENV_TARGET > "u" || ENV_TARGET !== "web" ? (url, cb, attrs, loaderHook) => {
+  if (loaderHook?.createScriptHook) {
+    const t = loaderHook.createScriptHook(url);
+    t && typeof t == "object" && "url" in t && (url = t.url);
+  }
+  let urlObj;
+  try {
+    urlObj = new URL(url);
+  } catch (t) {
+    console.error("Error constructing URL:", t), cb(new Error(`Invalid URL: ${t}`));
+    return;
+  }
+  const getFetch = async () => loaderHook?.fetch ? (t, e) => lazyLoaderHookFetch(t, e, loaderHook) : typeof fetch > "u" ? loadNodeFetch() : fetch, handleScriptFetch = async (f, urlObj) => {
+    try {
+      var _vm_constants;
+      const res = await f(urlObj.href), data = await res.text(), [path, vm] = await Promise.all([
+        importNodeModule("path"),
+        importNodeModule("vm")
+      ]), scriptContext = {
+        exports: {},
+        module: {
+          exports: {}
+        }
+      }, urlDirname = urlObj.pathname.split("/").slice(0, -1).join("/"), filename = path.basename(urlObj.pathname);
+      var _vm_constants_USE_MAIN_CONTEXT_DEFAULT_LOADER;
+      const script = new vm.Script(`(function(exports, module, require, __dirname, __filename) {${data}
+})`, {
+        filename,
+        importModuleDynamically: (_vm_constants_USE_MAIN_CONTEXT_DEFAULT_LOADER = (_vm_constants = vm.constants) == null ? void 0 : _vm_constants.USE_MAIN_CONTEXT_DEFAULT_LOADER) != null ? _vm_constants_USE_MAIN_CONTEXT_DEFAULT_LOADER : importNodeModule
+      });
+      script.runInThisContext()(scriptContext.exports, scriptContext.module, eval("require"), urlDirname, filename);
+      const exportedInterface = scriptContext.module.exports || scriptContext.exports;
+      if (attrs && exportedInterface && attrs.globalName) {
+        const t = exportedInterface[attrs.globalName] || exportedInterface;
+        cb(void 0, t);
+        return;
+      }
+      cb(void 0, exportedInterface);
+    } catch (t) {
+      cb(t instanceof Error ? t : new Error(`Script execution error: ${t}`));
+    }
+  };
+  getFetch().then(async (t) => {
+    if (attrs?.type === "esm" || attrs?.type === "module")
+      return loadModule(urlObj.href, {
+        fetch: t,
+        vm: await importNodeModule("vm")
+      }).then(async (e) => {
+        await e.evaluate(), cb(void 0, e.namespace);
+      }).catch((e) => {
+        cb(e instanceof Error ? e : new Error(`Script execution error: ${e}`));
+      });
+    handleScriptFetch(t, urlObj);
+  }).catch((t) => {
+    cb(t);
+  });
+} : (t, e, r, o) => {
+  e(new Error("createScriptNode is disabled in non-Node.js environment"));
+}, loadScriptNode = typeof ENV_TARGET > "u" || ENV_TARGET !== "web" ? (t, e) => new Promise((r, o) => {
+  createScriptNode(t, (n, i) => {
+    if (n)
+      o(n);
+    else {
+      var a, s;
+      const l = (e == null || (a = e.attrs) == null ? void 0 : a.globalName) || `__FEDERATION_${e == null || (s = e.attrs) == null ? void 0 : s.name}:custom__`, c = globalThis[l] = i;
+      r(c);
+    }
+  }, e.attrs, e.loaderHook);
+}) : (t, e) => {
+  throw new Error("loadScriptNode is disabled in non-Node.js environment");
+}, esmModuleCache = /* @__PURE__ */ new Map();
+async function loadModule(t, e) {
+  if (esmModuleCache.has(t))
+    return esmModuleCache.get(t);
+  const { fetch: r, vm: o } = e, i = await (await r(t)).text(), a = new o.SourceTextModule(i, {
+    // @ts-ignore
+    importModuleDynamically: async (s, l) => {
+      const c = new URL(s, t).href;
+      return loadModule(c, e);
+    }
+  });
+  return esmModuleCache.set(t, a), await a.link(async (s) => {
+    const l = new URL(s, t).href;
+    return await loadModule(l, e);
+  }), a;
+}
+function normalizeOptions(t, e, r) {
+  return function(o) {
+    if (o === !1)
+      return !1;
+    if (typeof o > "u")
+      return t ? e : !1;
+    if (o === !0)
+      return e;
+    if (o && typeof o == "object")
+      return polyfills$1._({}, e, o);
+    throw new Error(`Unexpected type for \`${r}\`, expect boolean/undefined/object, got: ${typeof o}`);
+  };
+}
+const createModuleFederationConfig = (t) => t;
+index_cjs$1.BROWSER_LOG_KEY = BROWSER_LOG_KEY;
+index_cjs$1.ENCODE_NAME_PREFIX = ENCODE_NAME_PREFIX;
+index_cjs$1.EncodedNameTransformMap = EncodedNameTransformMap;
+index_cjs$1.FederationModuleManifest = FederationModuleManifest;
+index_cjs$1.MANIFEST_EXT = MANIFEST_EXT;
+index_cjs$1.MFModuleType = MFModuleType;
+index_cjs$1.MFPrefetchCommon = MFPrefetchCommon;
+index_cjs$1.MODULE_DEVTOOL_IDENTIFIER = MODULE_DEVTOOL_IDENTIFIER;
+index_cjs$1.ManifestFileName = ManifestFileName;
+index_cjs$1.NameTransformMap = NameTransformMap;
+index_cjs$1.NameTransformSymbol = NameTransformSymbol;
+index_cjs$1.SEPARATOR = SEPARATOR;
+index_cjs$1.StatsFileName = StatsFileName;
+index_cjs$1.TEMP_DIR = TEMP_DIR;
+index_cjs$1.assert = assert$1;
+index_cjs$1.composeKeyWithSeparator = composeKeyWithSeparator;
+index_cjs$1.containerPlugin = ContainerPlugin;
+index_cjs$1.containerReferencePlugin = ContainerReferencePlugin;
+index_cjs$1.createLink = createLink;
+index_cjs$1.createLogger = createLogger;
+index_cjs$1.createModuleFederationConfig = createModuleFederationConfig;
+index_cjs$1.createScript = createScript;
+index_cjs$1.createScriptNode = createScriptNode;
+index_cjs$1.decodeName = decodeName;
+index_cjs$1.encodeName = encodeName;
+index_cjs$1.error = error$1;
+index_cjs$1.generateExposeFilename = generateExposeFilename;
+index_cjs$1.generateShareFilename = generateShareFilename;
+index_cjs$1.generateSnapshotFromManifest = generateSnapshotFromManifest;
+index_cjs$1.getProcessEnv = getProcessEnv;
+index_cjs$1.getResourceUrl = getResourceUrl;
+index_cjs$1.inferAutoPublicPath = inferAutoPublicPath;
+index_cjs$1.isBrowserEnv = isBrowserEnv;
+index_cjs$1.isDebugMode = isDebugMode;
+index_cjs$1.isManifestProvider = isManifestProvider;
+index_cjs$1.isReactNativeEnv = isReactNativeEnv;
+index_cjs$1.isRequiredVersion = isRequiredVersion;
+index_cjs$1.isStaticResourcesEqual = isStaticResourcesEqual$1;
+index_cjs$1.loadScript = loadScript;
+index_cjs$1.loadScriptNode = loadScriptNode;
+index_cjs$1.logger = logger$1;
+index_cjs$1.moduleFederationPlugin = ModuleFederationPlugin;
+index_cjs$1.normalizeOptions = normalizeOptions;
+index_cjs$1.parseEntry = parseEntry;
+index_cjs$1.safeToString = safeToString;
+index_cjs$1.safeWrapper = safeWrapper$1;
+index_cjs$1.sharePlugin = SharePlugin;
+index_cjs$1.simpleJoinRemoteEntry = simpleJoinRemoteEntry;
+index_cjs$1.warn = warn$1;
+var index_cjs = {};
+const RUNTIME_001 = "RUNTIME-001", RUNTIME_002 = "RUNTIME-002", RUNTIME_003 = "RUNTIME-003", RUNTIME_004 = "RUNTIME-004", RUNTIME_005 = "RUNTIME-005", RUNTIME_006 = "RUNTIME-006", RUNTIME_007 = "RUNTIME-007", RUNTIME_008 = "RUNTIME-008", RUNTIME_009 = "RUNTIME-009", TYPE_001 = "TYPE-001", BUILD_001 = "BUILD-001", BUILD_002 = "BUILD-002", getDocsUrl = (t) => `View the docs to see how to solve: https://module-federation.io/guide/troubleshooting/${t.split("-")[0].toLowerCase()}/${t}`, getShortErrorMsg = (t, e, r, o) => {
+  const n = [
+    `${[
+      e[t]
+    ]} #${t}`
+  ];
+  return r && n.push(`args: ${JSON.stringify(r)}`), n.push(getDocsUrl(t)), o && n.push(`Original Error Message:
+ ${o}`), n.join(`
+`);
+};
+function _extends() {
+  return _extends = Object.assign || function(e) {
+    for (var r = 1; r < arguments.length; r++) {
+      var o = arguments[r];
+      for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (e[n] = o[n]);
+    }
+    return e;
+  }, _extends.apply(this, arguments);
+}
+const runtimeDescMap = {
+  [RUNTIME_001]: "Failed to get remoteEntry exports.",
+  [RUNTIME_002]: 'The remote entry interface does not contain "init"',
+  [RUNTIME_003]: "Failed to get manifest.",
+  [RUNTIME_004]: "Failed to locate remote.",
+  [RUNTIME_005]: "Invalid loadShareSync function call from bundler runtime",
+  [RUNTIME_006]: "Invalid loadShareSync function call from runtime",
+  [RUNTIME_007]: "Failed to get remote snapshot.",
+  [RUNTIME_008]: "Failed to load script resources.",
+  [RUNTIME_009]: "Please call createInstance first."
+}, typeDescMap = {
+  [TYPE_001]: "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error."
+}, buildDescMap = {
+  [BUILD_001]: "Failed to find expose module.",
+  [BUILD_002]: "PublicPath is required in prod mode."
+}, errorDescMap = _extends({}, runtimeDescMap, typeDescMap, buildDescMap);
+index_cjs.BUILD_001 = BUILD_001;
+index_cjs.BUILD_002 = BUILD_002;
+index_cjs.RUNTIME_001 = RUNTIME_001;
+index_cjs.RUNTIME_002 = RUNTIME_002;
+index_cjs.RUNTIME_003 = RUNTIME_003;
+index_cjs.RUNTIME_004 = RUNTIME_004;
+index_cjs.RUNTIME_005 = RUNTIME_005;
+index_cjs.RUNTIME_006 = RUNTIME_006;
+index_cjs.RUNTIME_007 = RUNTIME_007;
+index_cjs.RUNTIME_008 = RUNTIME_008;
+index_cjs.RUNTIME_009 = RUNTIME_009;
+index_cjs.TYPE_001 = TYPE_001;
+index_cjs.buildDescMap = buildDescMap;
+index_cjs.errorDescMap = errorDescMap;
+index_cjs.getShortErrorMsg = getShortErrorMsg;
+index_cjs.runtimeDescMap = runtimeDescMap;
+index_cjs.typeDescMap = typeDescMap;
+var polyfills = polyfills_cjs$1, sdk = index_cjs$1, errorCodes$1 = index_cjs;
+const LOG_CATEGORY = "[ Federation Runtime ]", logger = sdk.createLogger(LOG_CATEGORY);
+function assert(t, e) {
+  t || error(e);
+}
+function error(t) {
+  throw t instanceof Error ? (t.message.startsWith(LOG_CATEGORY) || (t.message = `${LOG_CATEGORY}: ${t.message}`), t) : new Error(`${LOG_CATEGORY}: ${t}`);
+}
+function warn(t) {
+  t instanceof Error && (t.message.startsWith(LOG_CATEGORY) || (t.message = `${LOG_CATEGORY}: ${t.message}`)), logger.warn(t);
+}
+function addUniqueItem(t, e) {
+  return t.findIndex((r) => r === e) === -1 && t.push(e), t;
+}
+function getFMId(t) {
+  return "version" in t && t.version ? `${t.name}:${t.version}` : "entry" in t && t.entry ? `${t.name}:${t.entry}` : `${t.name}`;
+}
+function isRemoteInfoWithEntry(t) {
+  return typeof t.entry < "u";
+}
+function isPureRemoteEntry(t) {
+  return !t.entry.includes(".json");
+}
+async function safeWrapper(t, e) {
+  try {
+    return await t();
+  } catch (r) {
+    !e && warn(r);
+    return;
+  }
+}
+function isObject(t) {
+  return t && typeof t == "object";
+}
+const objectToString = Object.prototype.toString;
+function isPlainObject(t) {
+  return objectToString.call(t) === "[object Object]";
+}
+function isStaticResourcesEqual(t, e) {
+  const r = /^(https?:)?\/\//i, o = t.replace(r, "").replace(/\/$/, ""), n = e.replace(r, "").replace(/\/$/, "");
+  return o === n;
+}
+function arrayOptions(t) {
+  return Array.isArray(t) ? t : [
+    t
+  ];
+}
+function getRemoteEntryInfoFromSnapshot(t) {
+  const e = {
+    url: "",
+    type: "global",
+    globalName: ""
+  };
+  return sdk.isBrowserEnv() || sdk.isReactNativeEnv() ? "remoteEntry" in t ? {
+    url: t.remoteEntry,
+    type: t.remoteEntryType,
+    globalName: t.globalName
+  } : e : "ssrRemoteEntry" in t ? {
+    url: t.ssrRemoteEntry || e.url,
+    type: t.ssrRemoteEntryType || e.type,
+    globalName: t.globalName
+  } : e;
+}
+const processModuleAlias = (t, e) => {
+  let r;
+  return t.endsWith("/") ? r = t.slice(0, -1) : r = t, e.startsWith(".") && (e = e.slice(1)), r = r + e, r;
+}, CurrentGlobal = typeof globalThis == "object" ? globalThis : window, nativeGlobal = (() => {
+  try {
+    return document.defaultView;
+  } catch {
+    return CurrentGlobal;
+  }
+})(), Global = nativeGlobal;
+function definePropertyGlobalVal(t, e, r) {
+  Object.defineProperty(t, e, {
+    value: r,
+    configurable: !1,
+    writable: !0
+  });
+}
+function includeOwnProperty(t, e) {
+  return Object.hasOwnProperty.call(t, e);
+}
+includeOwnProperty(CurrentGlobal, "__GLOBAL_LOADING_REMOTE_ENTRY__") || definePropertyGlobalVal(CurrentGlobal, "__GLOBAL_LOADING_REMOTE_ENTRY__", {});
+const globalLoading = CurrentGlobal.__GLOBAL_LOADING_REMOTE_ENTRY__;
+function setGlobalDefaultVal(t) {
+  var e, r, o, n, i, a;
+  includeOwnProperty(t, "__VMOK__") && !includeOwnProperty(t, "__FEDERATION__") && definePropertyGlobalVal(t, "__FEDERATION__", t.__VMOK__), includeOwnProperty(t, "__FEDERATION__") || (definePropertyGlobalVal(t, "__FEDERATION__", {
+    __GLOBAL_PLUGIN__: [],
+    __INSTANCES__: [],
+    moduleInfo: {},
+    __SHARE__: {},
+    __MANIFEST_LOADING__: {},
+    __PRELOADED_MAP__: /* @__PURE__ */ new Map()
+  }), definePropertyGlobalVal(t, "__VMOK__", t.__FEDERATION__));
+  var s;
+  (s = (e = t.__FEDERATION__).__GLOBAL_PLUGIN__) != null || (e.__GLOBAL_PLUGIN__ = []);
+  var l;
+  (l = (r = t.__FEDERATION__).__INSTANCES__) != null || (r.__INSTANCES__ = []);
+  var c;
+  (c = (o = t.__FEDERATION__).moduleInfo) != null || (o.moduleInfo = {});
+  var u;
+  (u = (n = t.__FEDERATION__).__SHARE__) != null || (n.__SHARE__ = {});
+  var d;
+  (d = (i = t.__FEDERATION__).__MANIFEST_LOADING__) != null || (i.__MANIFEST_LOADING__ = {});
+  var p;
+  (p = (a = t.__FEDERATION__).__PRELOADED_MAP__) != null || (a.__PRELOADED_MAP__ = /* @__PURE__ */ new Map());
+}
+setGlobalDefaultVal(CurrentGlobal);
+setGlobalDefaultVal(nativeGlobal);
+function resetFederationGlobalInfo() {
+  CurrentGlobal.__FEDERATION__.__GLOBAL_PLUGIN__ = [], CurrentGlobal.__FEDERATION__.__INSTANCES__ = [], CurrentGlobal.__FEDERATION__.moduleInfo = {}, CurrentGlobal.__FEDERATION__.__SHARE__ = {}, CurrentGlobal.__FEDERATION__.__MANIFEST_LOADING__ = {}, Object.keys(globalLoading).forEach((t) => {
+    delete globalLoading[t];
+  });
+}
+function setGlobalFederationInstance(t) {
+  CurrentGlobal.__FEDERATION__.__INSTANCES__.push(t);
+}
+function getGlobalFederationConstructor() {
+  return CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR__;
+}
+function setGlobalFederationConstructor(t, e = sdk.isDebugMode()) {
+  e && (CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR__ = t, CurrentGlobal.__FEDERATION__.__DEBUG_CONSTRUCTOR_VERSION__ = "0.18.4");
+}
+function getInfoWithoutType(t, e) {
+  if (typeof e == "string") {
+    if (t[e])
+      return {
+        value: t[e],
+        key: e
+      };
+    {
+      const o = Object.keys(t);
+      for (const n of o) {
+        const [i, a] = n.split(":"), s = `${i}:${e}`, l = t[s];
+        if (l)
+          return {
+            value: l,
+            key: s
+          };
+      }
+      return {
+        value: void 0,
+        key: e
+      };
+    }
+  } else
+    throw new Error("key must be string");
+}
+const getGlobalSnapshot = () => nativeGlobal.__FEDERATION__.moduleInfo, getTargetSnapshotInfoByModuleInfo = (t, e) => {
+  const r = getFMId(t), o = getInfoWithoutType(e, r).value;
+  if (o && !o.version && "version" in t && t.version && (o.version = t.version), o)
+    return o;
+  if ("version" in t && t.version) {
+    const { version: n } = t, i = polyfills._object_without_properties_loose(t, [
+      "version"
+    ]), a = getFMId(i), s = getInfoWithoutType(nativeGlobal.__FEDERATION__.moduleInfo, a).value;
+    if (s?.version === n)
+      return s;
+  }
+}, getGlobalSnapshotInfoByModuleInfo = (t) => getTargetSnapshotInfoByModuleInfo(t, nativeGlobal.__FEDERATION__.moduleInfo), setGlobalSnapshotInfoByModuleInfo = (t, e) => {
+  const r = getFMId(t);
+  return nativeGlobal.__FEDERATION__.moduleInfo[r] = e, nativeGlobal.__FEDERATION__.moduleInfo;
+}, addGlobalSnapshot = (t) => (nativeGlobal.__FEDERATION__.moduleInfo = polyfills._extends({}, nativeGlobal.__FEDERATION__.moduleInfo, t), () => {
+  const e = Object.keys(t);
+  for (const r of e)
+    delete nativeGlobal.__FEDERATION__.moduleInfo[r];
+}), getRemoteEntryExports = (t, e) => {
+  const r = e || `__FEDERATION_${t}:custom__`, o = CurrentGlobal[r];
+  return {
+    remoteEntryKey: r,
+    entryExports: o
+  };
+}, registerGlobalPlugins = (t) => {
+  const { __GLOBAL_PLUGIN__: e } = nativeGlobal.__FEDERATION__;
+  t.forEach((r) => {
+    e.findIndex((o) => o.name === r.name) === -1 ? e.push(r) : warn(`The plugin ${r.name} has been registered.`);
+  });
+}, getGlobalHostPlugins = () => nativeGlobal.__FEDERATION__.__GLOBAL_PLUGIN__, getPreloaded = (t) => CurrentGlobal.__FEDERATION__.__PRELOADED_MAP__.get(t), setPreloaded = (t) => CurrentGlobal.__FEDERATION__.__PRELOADED_MAP__.set(t, !0), DEFAULT_SCOPE = "default", DEFAULT_REMOTE_TYPE = "global", buildIdentifier = "[0-9A-Za-z-]+", build = `(?:\\+(${buildIdentifier}(?:\\.${buildIdentifier})*))`, numericIdentifier = "0|[1-9]\\d*", numericIdentifierLoose = "[0-9]+", nonNumericIdentifier = "\\d*[a-zA-Z-][a-zA-Z0-9-]*", preReleaseIdentifierLoose = `(?:${numericIdentifierLoose}|${nonNumericIdentifier})`, preReleaseLoose = `(?:-?(${preReleaseIdentifierLoose}(?:\\.${preReleaseIdentifierLoose})*))`, preReleaseIdentifier = `(?:${numericIdentifier}|${nonNumericIdentifier})`, preRelease = `(?:-(${preReleaseIdentifier}(?:\\.${preReleaseIdentifier})*))`, xRangeIdentifier = `${numericIdentifier}|x|X|\\*`, xRangePlain = `[v=\\s]*(${xRangeIdentifier})(?:\\.(${xRangeIdentifier})(?:\\.(${xRangeIdentifier})(?:${preRelease})?${build}?)?)?`, hyphenRange = `^\\s*(${xRangePlain})\\s+-\\s+(${xRangePlain})\\s*$`, mainVersionLoose = `(${numericIdentifierLoose})\\.(${numericIdentifierLoose})\\.(${numericIdentifierLoose})`, loosePlain = `[v=\\s]*${mainVersionLoose}${preReleaseLoose}?${build}?`, gtlt = "((?:<|>)?=?)", comparatorTrim = `(\\s*)${gtlt}\\s*(${loosePlain}|${xRangePlain})`, loneTilde = "(?:~>?)", tildeTrim = `(\\s*)${loneTilde}\\s+`, loneCaret = "(?:\\^)", caretTrim = `(\\s*)${loneCaret}\\s+`, star = "(<|>)?=?\\s*\\*", caret = `^${loneCaret}${xRangePlain}$`, mainVersion = `(${numericIdentifier})\\.(${numericIdentifier})\\.(${numericIdentifier})`, fullPlain = `v?${mainVersion}${preRelease}?${build}?`, tilde = `^${loneTilde}${xRangePlain}$`, xRange = `^${gtlt}\\s*${xRangePlain}$`, comparator = `^${gtlt}\\s*(${fullPlain})$|^$`, gte0 = "^\\s*>=\\s*0.0.0\\s*$";
+function parseRegex(t) {
+  return new RegExp(t);
+}
+function isXVersion(t) {
+  return !t || t.toLowerCase() === "x" || t === "*";
+}
+function pipe(...t) {
+  return (e) => t.reduce((r, o) => o(r), e);
+}
+function extractComparator(t) {
+  return t.match(parseRegex(comparator));
+}
+function combineVersion(t, e, r, o) {
+  const n = `${t}.${e}.${r}`;
+  return o ? `${n}-${o}` : n;
+}
+function parseHyphen(t) {
+  return t.replace(parseRegex(hyphenRange), (e, r, o, n, i, a, s, l, c, u, d, p) => (isXVersion(o) ? r = "" : isXVersion(n) ? r = `>=${o}.0.0` : isXVersion(i) ? r = `>=${o}.${n}.0` : r = `>=${r}`, isXVersion(c) ? l = "" : isXVersion(u) ? l = `<${Number(c) + 1}.0.0-0` : isXVersion(d) ? l = `<${c}.${Number(u) + 1}.0-0` : p ? l = `<=${c}.${u}.${d}-${p}` : l = `<=${l}`, `${r} ${l}`.trim()));
+}
+function parseComparatorTrim(t) {
+  return t.replace(parseRegex(comparatorTrim), "$1$2$3");
+}
+function parseTildeTrim(t) {
+  return t.replace(parseRegex(tildeTrim), "$1~");
+}
+function parseCaretTrim(t) {
+  return t.replace(parseRegex(caretTrim), "$1^");
+}
+function parseCarets(t) {
+  return t.trim().split(/\s+/).map((e) => e.replace(parseRegex(caret), (r, o, n, i, a) => isXVersion(o) ? "" : isXVersion(n) ? `>=${o}.0.0 <${Number(o) + 1}.0.0-0` : isXVersion(i) ? o === "0" ? `>=${o}.${n}.0 <${o}.${Number(n) + 1}.0-0` : `>=${o}.${n}.0 <${Number(o) + 1}.0.0-0` : a ? o === "0" ? n === "0" ? `>=${o}.${n}.${i}-${a} <${o}.${n}.${Number(i) + 1}-0` : `>=${o}.${n}.${i}-${a} <${o}.${Number(n) + 1}.0-0` : `>=${o}.${n}.${i}-${a} <${Number(o) + 1}.0.0-0` : o === "0" ? n === "0" ? `>=${o}.${n}.${i} <${o}.${n}.${Number(i) + 1}-0` : `>=${o}.${n}.${i} <${o}.${Number(n) + 1}.0-0` : `>=${o}.${n}.${i} <${Number(o) + 1}.0.0-0`)).join(" ");
+}
+function parseTildes(t) {
+  return t.trim().split(/\s+/).map((e) => e.replace(parseRegex(tilde), (r, o, n, i, a) => isXVersion(o) ? "" : isXVersion(n) ? `>=${o}.0.0 <${Number(o) + 1}.0.0-0` : isXVersion(i) ? `>=${o}.${n}.0 <${o}.${Number(n) + 1}.0-0` : a ? `>=${o}.${n}.${i}-${a} <${o}.${Number(n) + 1}.0-0` : `>=${o}.${n}.${i} <${o}.${Number(n) + 1}.0-0`)).join(" ");
+}
+function parseXRanges(t) {
+  return t.split(/\s+/).map((e) => e.trim().replace(parseRegex(xRange), (r, o, n, i, a, s) => {
+    const l = isXVersion(n), c = l || isXVersion(i), u = c || isXVersion(a);
+    return o === "=" && u && (o = ""), s = "", l ? o === ">" || o === "<" ? "<0.0.0-0" : "*" : o && u ? (c && (i = 0), a = 0, o === ">" ? (o = ">=", c ? (n = Number(n) + 1, i = 0, a = 0) : (i = Number(i) + 1, a = 0)) : o === "<=" && (o = "<", c ? n = Number(n) + 1 : i = Number(i) + 1), o === "<" && (s = "-0"), `${o + n}.${i}.${a}${s}`) : c ? `>=${n}.0.0${s} <${Number(n) + 1}.0.0-0` : u ? `>=${n}.${i}.0${s} <${n}.${Number(i) + 1}.0-0` : r;
+  })).join(" ");
+}
+function parseStar(t) {
+  return t.trim().replace(parseRegex(star), "");
+}
+function parseGTE0(t) {
+  return t.trim().replace(parseRegex(gte0), "");
+}
+function compareAtom(t, e) {
+  return t = Number(t) || t, e = Number(e) || e, t > e ? 1 : t === e ? 0 : -1;
+}
+function comparePreRelease(t, e) {
+  const { preRelease: r } = t, { preRelease: o } = e;
+  if (r === void 0 && o)
+    return 1;
+  if (r && o === void 0)
+    return -1;
+  if (r === void 0 && o === void 0)
+    return 0;
+  for (let n = 0, i = r.length; n <= i; n++) {
+    const a = r[n], s = o[n];
+    if (a !== s)
+      return a === void 0 && s === void 0 ? 0 : a ? s ? compareAtom(a, s) : -1 : 1;
+  }
+  return 0;
+}
+function compareVersion(t, e) {
+  return compareAtom(t.major, e.major) || compareAtom(t.minor, e.minor) || compareAtom(t.patch, e.patch) || comparePreRelease(t, e);
+}
+function eq(t, e) {
+  return t.version === e.version;
+}
+function compare(t, e) {
+  switch (t.operator) {
+    case "":
+    case "=":
+      return eq(t, e);
+    case ">":
+      return compareVersion(t, e) < 0;
+    case ">=":
+      return eq(t, e) || compareVersion(t, e) < 0;
+    case "<":
+      return compareVersion(t, e) > 0;
+    case "<=":
+      return eq(t, e) || compareVersion(t, e) > 0;
+    case void 0:
+      return !0;
+    default:
+      return !1;
+  }
+}
+function parseComparatorString(t) {
+  return pipe(
+    // handle caret
+    // ^ --> * (any, kinda silly)
+    // ^2, ^2.x, ^2.x.x --> >=2.0.0 <3.0.0-0
+    // ^2.0, ^2.0.x --> >=2.0.0 <3.0.0-0
+    // ^1.2, ^1.2.x --> >=1.2.0 <2.0.0-0
+    // ^1.2.3 --> >=1.2.3 <2.0.0-0
+    // ^1.2.0 --> >=1.2.0 <2.0.0-0
+    parseCarets,
+    // handle tilde
+    // ~, ~> --> * (any, kinda silly)
+    // ~2, ~2.x, ~2.x.x, ~>2, ~>2.x ~>2.x.x --> >=2.0.0 <3.0.0-0
+    // ~2.0, ~2.0.x, ~>2.0, ~>2.0.x --> >=2.0.0 <2.1.0-0
+    // ~1.2, ~1.2.x, ~>1.2, ~>1.2.x --> >=1.2.0 <1.3.0-0
+    // ~1.2.3, ~>1.2.3 --> >=1.2.3 <1.3.0-0
+    // ~1.2.0, ~>1.2.0 --> >=1.2.0 <1.3.0-0
+    parseTildes,
+    parseXRanges,
+    parseStar
+  )(t);
+}
+function parseRange(t) {
+  return pipe(
+    // handle hyphenRange
+    // `1.2.3 - 1.2.4` => `>=1.2.3 <=1.2.4`
+    parseHyphen,
+    // handle trim comparator
+    // `> 1.2.3 < 1.2.5` => `>1.2.3 <1.2.5`
+    parseComparatorTrim,
+    // handle trim tilde
+    // `~ 1.2.3` => `~1.2.3`
+    parseTildeTrim,
+    // handle trim caret
+    // `^ 1.2.3` => `^1.2.3`
+    parseCaretTrim
+  )(t.trim()).split(/\s+/).join(" ");
+}
+function satisfy(t, e) {
+  if (!t)
+    return !1;
+  const r = extractComparator(t);
+  if (!r)
+    return !1;
+  const [, o, , n, i, a, s] = r, l = {
+    operator: o,
+    version: combineVersion(n, i, a, s),
+    major: n,
+    minor: i,
+    patch: a,
+    preRelease: s?.split(".")
+  }, c = e.split("||");
+  for (const u of c) {
+    const d = u.trim();
+    if (!d || d === "*" || d === "x")
+      return !0;
+    try {
+      const p = parseRange(d);
+      if (!p.trim())
+        return !0;
+      const m = p.split(" ").map((h) => parseComparatorString(h)).join(" ");
+      if (!m.trim())
+        return !0;
+      const _ = m.split(/\s+/).map((h) => parseGTE0(h)).filter(Boolean);
+      if (_.length === 0)
+        continue;
+      let y = !0;
+      for (const h of _) {
+        const g = extractComparator(h);
+        if (!g) {
+          y = !1;
+          break;
+        }
+        const [, I, , b, S, E, R] = g, N = {
+          operator: I,
+          version: combineVersion(b, S, E, R),
+          major: b,
+          minor: S,
+          patch: E,
+          preRelease: R?.split(".")
+        };
+        if (!compare(N, l)) {
+          y = !1;
+          break;
+        }
+      }
+      if (y)
+        return !0;
+    } catch (p) {
+      console.error(`[semver] Error processing range part "${d}":`, p);
+      continue;
+    }
+  }
+  return !1;
+}
+function formatShare(t, e, r, o) {
+  let n;
+  "get" in t ? n = t.get : "lib" in t ? n = () => Promise.resolve(t.lib) : n = () => Promise.resolve(() => {
+    throw new Error(`Can not get shared '${r}'!`);
+  });
+  var i, a, s;
+  return polyfills._extends({
+    deps: [],
+    useIn: [],
+    from: e,
+    loading: null
+  }, t, {
+    shareConfig: polyfills._extends({
+      requiredVersion: `^${t.version}`,
+      singleton: !1,
+      eager: !1,
+      strictVersion: !1
+    }, t.shareConfig),
+    get: n,
+    loaded: t?.loaded || "lib" in t ? !0 : void 0,
+    version: (i = t.version) != null ? i : "0",
+    scope: Array.isArray(t.scope) ? t.scope : [
+      (a = t.scope) != null ? a : "default"
+    ],
+    strategy: ((s = t.strategy) != null ? s : o) || "version-first"
+  });
+}
+function formatShareConfigs(t, e) {
+  const r = e.shared || {}, o = e.name, n = Object.keys(r).reduce((a, s) => {
+    const l = arrayOptions(r[s]);
+    return a[s] = a[s] || [], l.forEach((c) => {
+      a[s].push(formatShare(c, o, s, e.shareStrategy));
+    }), a;
+  }, {}), i = polyfills._extends({}, t.shared);
+  return Object.keys(n).forEach((a) => {
+    i[a] ? n[a].forEach((s) => {
+      i[a].find((c) => c.version === s.version) || i[a].push(s);
+    }) : i[a] = n[a];
+  }), {
+    shared: i,
+    shareInfos: n
+  };
+}
+function versionLt(t, e) {
+  const r = (o) => {
+    if (!Number.isNaN(Number(o))) {
+      const i = o.split(".");
+      let a = o;
+      for (let s = 0; s < 3 - i.length; s++)
+        a += ".0";
+      return a;
+    }
+    return o;
+  };
+  return !!satisfy(r(t), `<=${r(e)}`);
+}
+const findVersion = (t, e) => {
+  const r = e || function(o, n) {
+    return versionLt(o, n);
+  };
+  return Object.keys(t).reduce((o, n) => !o || r(o, n) || o === "0" ? n : o, 0);
+}, isLoaded = (t) => !!t.loaded || typeof t.lib == "function", isLoading = (t) => !!t.loading;
+function findSingletonVersionOrderByVersion(t, e, r) {
+  const o = t[e][r], n = function(i, a) {
+    return !isLoaded(o[i]) && versionLt(i, a);
+  };
+  return findVersion(t[e][r], n);
+}
+function findSingletonVersionOrderByLoaded(t, e, r) {
+  const o = t[e][r], n = function(i, a) {
+    const s = (l) => isLoaded(l) || isLoading(l);
+    return s(o[a]) ? s(o[i]) ? !!versionLt(i, a) : !0 : s(o[i]) ? !1 : versionLt(i, a);
+  };
+  return findVersion(t[e][r], n);
+}
+function getFindShareFunction(t) {
+  return t === "loaded-first" ? findSingletonVersionOrderByLoaded : findSingletonVersionOrderByVersion;
+}
+function getRegisteredShare(t, e, r, o) {
+  if (!t)
+    return;
+  const { shareConfig: n, scope: i = DEFAULT_SCOPE, strategy: a } = r, s = Array.isArray(i) ? i : [
+    i
+  ];
+  for (const l of s)
+    if (n && t[l] && t[l][e]) {
+      const { requiredVersion: c } = n, d = getFindShareFunction(a)(t, l, e), p = () => {
+        if (n.singleton) {
+          if (typeof c == "string" && !satisfy(d, c)) {
+            const y = `Version ${d} from ${d && t[l][e][d].from} of shared singleton module ${e} does not satisfy the requirement of ${r.from} which needs ${c})`;
+            n.strictVersion ? error(y) : warn(y);
+          }
+          return t[l][e][d];
+        } else {
+          if (c === !1 || c === "*" || satisfy(d, c))
+            return t[l][e][d];
+          for (const [y, h] of Object.entries(t[l][e]))
+            if (satisfy(y, c))
+              return h;
+        }
+      }, m = {
+        shareScopeMap: t,
+        scope: l,
+        pkgName: e,
+        version: d,
+        GlobalFederation: Global.__FEDERATION__,
+        resolver: p
+      };
+      return (o.emit(m) || m).resolver();
+    }
+}
+function getGlobalShareScope() {
+  return Global.__FEDERATION__.__SHARE__;
+}
+function getTargetSharedOptions(t) {
+  const { pkgName: e, extraOptions: r, shareInfos: o } = t, n = (s) => {
+    if (!s)
+      return;
+    const l = {};
+    s.forEach((d) => {
+      l[d.version] = d;
+    });
+    const u = findVersion(l, function(d, p) {
+      return !isLoaded(l[d]) && versionLt(d, p);
+    });
+    return l[u];
+  };
+  var i;
+  const a = (i = r?.resolver) != null ? i : n;
+  return Object.assign({}, a(o[e]), r?.customShareInfo);
+}
+function getBuilderId$1() {
+  return typeof FEDERATION_BUILD_IDENTIFIER < "u" ? FEDERATION_BUILD_IDENTIFIER : "";
+}
+function matchRemoteWithNameAndExpose(t, e) {
+  for (const r of t) {
+    const o = e.startsWith(r.name);
+    let n = e.replace(r.name, "");
+    if (o) {
+      if (n.startsWith("/")) {
+        const s = r.name;
+        return n = `.${n}`, {
+          pkgNameOrAlias: s,
+          expose: n,
+          remote: r
+        };
+      } else if (n === "")
+        return {
+          pkgNameOrAlias: r.name,
+          expose: ".",
+          remote: r
+        };
+    }
+    const i = r.alias && e.startsWith(r.alias);
+    let a = r.alias && e.replace(r.alias, "");
+    if (r.alias && i) {
+      if (a && a.startsWith("/")) {
+        const s = r.alias;
+        return a = `.${a}`, {
+          pkgNameOrAlias: s,
+          expose: a,
+          remote: r
+        };
+      } else if (a === "")
+        return {
+          pkgNameOrAlias: r.alias,
+          expose: ".",
+          remote: r
+        };
+    }
+  }
+}
+function matchRemote(t, e) {
+  for (const r of t)
+    if (e === r.name || r.alias && e === r.alias)
+      return r;
+}
+function registerPlugins$1(t, e) {
+  const r = getGlobalHostPlugins(), o = [
+    e.hooks,
+    e.remoteHandler.hooks,
+    e.sharedHandler.hooks,
+    e.snapshotHandler.hooks,
+    e.loaderHook,
+    e.bridgeHook
+  ];
+  return r.length > 0 && r.forEach((n) => {
+    t?.find((i) => i.name !== n.name) && t.push(n);
+  }), t && t.length > 0 && t.forEach((n) => {
+    o.forEach((i) => {
+      i.applyPlugin(n, e);
+    });
+  }), t;
+}
+const importCallback = ".then(callbacks[0]).catch(callbacks[1])";
+async function loadEsmEntry({ entry: t, remoteEntryExports: e }) {
+  return new Promise((r, o) => {
+    try {
+      e ? r(e) : typeof FEDERATION_ALLOW_NEW_FUNCTION < "u" ? new Function("callbacks", `import("${t}")${importCallback}`)([
+        r,
+        o
+      ]) : import(
+        /* webpackIgnore: true */
+        /* @vite-ignore */
+        t
+      ).then(r).catch(o);
+    } catch (n) {
+      o(n);
+    }
+  });
+}
+async function loadSystemJsEntry({ entry: t, remoteEntryExports: e }) {
+  return new Promise((r, o) => {
+    try {
+      e ? r(e) : typeof __system_context__ > "u" ? System.import(t).then(r).catch(o) : new Function("callbacks", `System.import("${t}")${importCallback}`)([
+        r,
+        o
+      ]);
+    } catch (n) {
+      o(n);
+    }
+  });
+}
+function handleRemoteEntryLoaded(t, e, r) {
+  const { remoteEntryKey: o, entryExports: n } = getRemoteEntryExports(t, e);
+  return assert(n, errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_001, errorCodes$1.runtimeDescMap, {
+    remoteName: t,
+    remoteEntryUrl: r,
+    remoteEntryKey: o
+  })), n;
+}
+async function loadEntryScript({ name: t, globalName: e, entry: r, loaderHook: o, getEntryUrl: n }) {
+  const { entryExports: i } = getRemoteEntryExports(t, e);
+  if (i)
+    return i;
+  const a = n ? n(r) : r;
+  return sdk.loadScript(a, {
+    attrs: {},
+    createScriptHook: (s, l) => {
+      const c = o.lifecycle.createScript.emit({
+        url: s,
+        attrs: l
+      });
+      if (c && (c instanceof HTMLScriptElement || "script" in c || "timeout" in c))
+        return c;
+    }
+  }).then(() => handleRemoteEntryLoaded(t, e, r)).catch((s) => {
+    throw assert(void 0, errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_008, errorCodes$1.runtimeDescMap, {
+      remoteName: t,
+      resourceUrl: r
+    })), s;
+  });
+}
+async function loadEntryDom({ remoteInfo: t, remoteEntryExports: e, loaderHook: r, getEntryUrl: o }) {
+  const { entry: n, entryGlobalName: i, name: a, type: s } = t;
+  switch (s) {
+    case "esm":
+    case "module":
+      return loadEsmEntry({
+        entry: n,
+        remoteEntryExports: e
+      });
+    case "system":
+      return loadSystemJsEntry({
+        entry: n,
+        remoteEntryExports: e
+      });
+    default:
+      return loadEntryScript({
+        entry: n,
+        globalName: i,
+        name: a,
+        loaderHook: r,
+        getEntryUrl: o
+      });
+  }
+}
+async function loadEntryNode({ remoteInfo: t, loaderHook: e }) {
+  const { entry: r, entryGlobalName: o, name: n, type: i } = t, { entryExports: a } = getRemoteEntryExports(n, o);
+  return a || sdk.loadScriptNode(r, {
+    attrs: {
+      name: n,
+      globalName: o,
+      type: i
+    },
+    loaderHook: {
+      createScriptHook: (s, l = {}) => {
+        const c = e.lifecycle.createScript.emit({
+          url: s,
+          attrs: l
+        });
+        if (c && "url" in c)
+          return c;
+      }
+    }
+  }).then(() => handleRemoteEntryLoaded(n, o, r)).catch((s) => {
+    throw s;
+  });
+}
+function getRemoteEntryUniqueKey(t) {
+  const { entry: e, name: r } = t;
+  return sdk.composeKeyWithSeparator(r, e);
+}
+async function getRemoteEntry(t) {
+  const { origin: e, remoteEntryExports: r, remoteInfo: o, getEntryUrl: n } = t, i = getRemoteEntryUniqueKey(o);
+  if (r)
+    return r;
+  if (!globalLoading[i]) {
+    const a = e.remoteHandler.hooks.lifecycle.loadEntry, s = e.loaderHook;
+    globalLoading[i] = a.emit({
+      loaderHook: s,
+      remoteInfo: o,
+      remoteEntryExports: r
+    }).then((l) => l || ((typeof ENV_TARGET < "u" ? ENV_TARGET === "web" : sdk.isBrowserEnv()) ? loadEntryDom({
+      remoteInfo: o,
+      remoteEntryExports: r,
+      loaderHook: s,
+      getEntryUrl: n
+    }) : loadEntryNode({
+      remoteInfo: o,
+      loaderHook: s
+    })));
+  }
+  return globalLoading[i];
+}
+function getRemoteInfo(t) {
+  return polyfills._extends({}, t, {
+    entry: "entry" in t ? t.entry : "",
+    type: t.type || DEFAULT_REMOTE_TYPE,
+    entryGlobalName: t.entryGlobalName || t.name,
+    shareScope: t.shareScope || DEFAULT_SCOPE
+  });
+}
+function defaultPreloadArgs(t) {
+  return polyfills._extends({
+    resourceCategory: "sync",
+    share: !0,
+    depsRemote: !0,
+    prefetchInterface: !1
+  }, t);
+}
+function formatPreloadArgs(t, e) {
+  return e.map((r) => {
+    const o = matchRemote(t, r.nameOrAlias);
+    return assert(o, `Unable to preload ${r.nameOrAlias} as it is not included in ${!o && sdk.safeToString({
+      remoteInfo: o,
+      remotes: t
+    })}`), {
+      remote: o,
+      preloadConfig: defaultPreloadArgs(r)
+    };
+  });
+}
+function normalizePreloadExposes(t) {
+  return t ? t.map((e) => e === "." ? e : e.startsWith("./") ? e.replace("./", "") : e) : [];
+}
+function preloadAssets(t, e, r, o = !0) {
+  const { cssAssets: n, jsAssetsWithoutEntry: i, entryAssets: a } = r;
+  if (e.options.inBrowser) {
+    if (a.forEach((s) => {
+      const { moduleInfo: l } = s, c = e.moduleCache.get(t.name);
+      getRemoteEntry(c ? {
+        origin: e,
+        remoteInfo: l,
+        remoteEntryExports: c.remoteEntryExports
+      } : {
+        origin: e,
+        remoteInfo: l,
+        remoteEntryExports: void 0
+      });
+    }), o) {
+      const s = {
+        rel: "preload",
+        as: "style"
+      };
+      n.forEach((l) => {
+        const { link: c, needAttach: u } = sdk.createLink({
+          url: l,
+          cb: () => {
+          },
+          attrs: s,
+          createLinkHook: (d, p) => {
+            const m = e.loaderHook.lifecycle.createLink.emit({
+              url: d,
+              attrs: p
+            });
+            if (m instanceof HTMLLinkElement)
+              return m;
+          }
+        });
+        u && document.head.appendChild(c);
+      });
+    } else {
+      const s = {
+        rel: "stylesheet",
+        type: "text/css"
+      };
+      n.forEach((l) => {
+        const { link: c, needAttach: u } = sdk.createLink({
+          url: l,
+          cb: () => {
+          },
+          attrs: s,
+          createLinkHook: (d, p) => {
+            const m = e.loaderHook.lifecycle.createLink.emit({
+              url: d,
+              attrs: p
+            });
+            if (m instanceof HTMLLinkElement)
+              return m;
+          },
+          needDeleteLink: !1
+        });
+        u && document.head.appendChild(c);
+      });
+    }
+    if (o) {
+      const s = {
+        rel: "preload",
+        as: "script"
+      };
+      i.forEach((l) => {
+        const { link: c, needAttach: u } = sdk.createLink({
+          url: l,
+          cb: () => {
+          },
+          attrs: s,
+          createLinkHook: (d, p) => {
+            const m = e.loaderHook.lifecycle.createLink.emit({
+              url: d,
+              attrs: p
+            });
+            if (m instanceof HTMLLinkElement)
+              return m;
+          }
+        });
+        u && document.head.appendChild(c);
+      });
+    } else {
+      const s = {
+        fetchpriority: "high",
+        type: t?.type === "module" ? "module" : "text/javascript"
+      };
+      i.forEach((l) => {
+        const { script: c, needAttach: u } = sdk.createScript({
+          url: l,
+          cb: () => {
+          },
+          attrs: s,
+          createScriptHook: (d, p) => {
+            const m = e.loaderHook.lifecycle.createScript.emit({
+              url: d,
+              attrs: p
+            });
+            if (m instanceof HTMLScriptElement)
+              return m;
+          },
+          needDeleteScript: !0
+        });
+        u && document.head.appendChild(c);
+      });
+    }
+  }
+}
+const ShareUtils = {
+  getRegisteredShare,
+  getGlobalShareScope
+}, GlobalUtils = {
+  Global,
+  nativeGlobal,
+  resetFederationGlobalInfo,
+  setGlobalFederationInstance,
+  getGlobalFederationConstructor,
+  setGlobalFederationConstructor,
+  getInfoWithoutType,
+  getGlobalSnapshot,
+  getTargetSnapshotInfoByModuleInfo,
+  getGlobalSnapshotInfoByModuleInfo,
+  setGlobalSnapshotInfoByModuleInfo,
+  addGlobalSnapshot,
+  getRemoteEntryExports,
+  registerGlobalPlugins,
+  getGlobalHostPlugins,
+  getPreloaded,
+  setPreloaded
+};
+var helpers = {
+  global: GlobalUtils,
+  share: ShareUtils,
+  utils: {
+    matchRemoteWithNameAndExpose,
+    preloadAssets,
+    getRemoteInfo
+  }
+};
+let Module = class {
+  async getEntry() {
+    if (this.remoteEntryExports)
+      return this.remoteEntryExports;
+    let e;
+    try {
+      e = await getRemoteEntry({
+        origin: this.host,
+        remoteInfo: this.remoteInfo,
+        remoteEntryExports: this.remoteEntryExports
+      });
+    } catch (r) {
+      const o = getRemoteEntryUniqueKey(this.remoteInfo);
+      if (r instanceof Error && r.message.includes(errorCodes$1.RUNTIME_008))
+        e = await this.host.loaderHook.lifecycle.loadEntryError.emit({
+          getRemoteEntry,
+          origin: this.host,
+          remoteInfo: this.remoteInfo,
+          remoteEntryExports: this.remoteEntryExports,
+          globalLoading,
+          uniqueKey: o
+        });
+      else
+        throw r;
+    }
+    return assert(e, `remoteEntryExports is undefined 
+ ${sdk.safeToString(this.remoteInfo)}`), this.remoteEntryExports = e, this.remoteEntryExports;
+  }
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  async get(e, r, o, n) {
+    const { loadFactory: i = !0 } = o || {
+      loadFactory: !0
+    }, a = await this.getEntry();
+    if (!this.inited) {
+      const d = this.host.shareScopeMap, p = Array.isArray(this.remoteInfo.shareScope) ? this.remoteInfo.shareScope : [
+        this.remoteInfo.shareScope
+      ];
+      p.length || p.push("default"), p.forEach((g) => {
+        d[g] || (d[g] = {});
+      });
+      const m = d[p[0]], _ = [], y = {
+        version: this.remoteInfo.version || "",
+        shareScopeKeys: Array.isArray(this.remoteInfo.shareScope) ? p : this.remoteInfo.shareScope || "default"
+      };
+      Object.defineProperty(y, "shareScopeMap", {
+        value: d,
+        // remoteEntryInitOptions will be traversed and assigned during container init, ,so this attribute is not allowed to be traversed
+        enumerable: !1
+      });
+      const h = await this.host.hooks.lifecycle.beforeInitContainer.emit({
+        shareScope: m,
+        // @ts-ignore shareScopeMap will be set by Object.defineProperty
+        remoteEntryInitOptions: y,
+        initScope: _,
+        remoteInfo: this.remoteInfo,
+        origin: this.host
+      });
+      typeof a?.init > "u" && error(errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_002, errorCodes$1.runtimeDescMap, {
+        hostName: this.host.name,
+        remoteName: this.remoteInfo.name,
+        remoteEntryUrl: this.remoteInfo.entry,
+        remoteEntryKey: this.remoteInfo.entryGlobalName
+      })), await a.init(h.shareScope, h.initScope, h.remoteEntryInitOptions), await this.host.hooks.lifecycle.initContainer.emit(polyfills._extends({}, h, {
+        id: e,
+        remoteSnapshot: n,
+        remoteEntryExports: a
+      }));
+    }
+    this.lib = a, this.inited = !0;
+    let s;
+    s = await this.host.loaderHook.lifecycle.getModuleFactory.emit({
+      remoteEntryExports: a,
+      expose: r,
+      moduleInfo: this.remoteInfo
+    }), s || (s = await a.get(r)), assert(s, `${getFMId(this.remoteInfo)} remote don't export ${r}.`);
+    const l = processModuleAlias(this.remoteInfo.name, r), c = this.wraperFactory(s, l);
+    return i ? await c() : c;
+  }
+  wraperFactory(e, r) {
+    function o(n, i) {
+      n && typeof n == "object" && Object.isExtensible(n) && !Object.getOwnPropertyDescriptor(n, Symbol.for("mf_module_id")) && Object.defineProperty(n, Symbol.for("mf_module_id"), {
+        value: i,
+        enumerable: !1
+      });
+    }
+    return e instanceof Promise ? async () => {
+      const n = await e();
+      return o(n, r), n;
+    } : () => {
+      const n = e();
+      return o(n, r), n;
+    };
+  }
+  constructor({ remoteInfo: e, host: r }) {
+    this.inited = !1, this.lib = void 0, this.remoteInfo = e, this.host = r;
+  }
+};
+class SyncHook {
+  on(e) {
+    typeof e == "function" && this.listeners.add(e);
+  }
+  once(e) {
+    const r = this;
+    this.on(function o(...n) {
+      return r.remove(o), e.apply(null, n);
+    });
+  }
+  emit(...e) {
+    let r;
+    return this.listeners.size > 0 && this.listeners.forEach((o) => {
+      r = o(...e);
+    }), r;
+  }
+  remove(e) {
+    this.listeners.delete(e);
+  }
+  removeAll() {
+    this.listeners.clear();
+  }
+  constructor(e) {
+    this.type = "", this.listeners = /* @__PURE__ */ new Set(), e && (this.type = e);
+  }
+}
+class AsyncHook extends SyncHook {
+  emit(...e) {
+    let r;
+    const o = Array.from(this.listeners);
+    if (o.length > 0) {
+      let n = 0;
+      const i = (a) => a === !1 ? !1 : n < o.length ? Promise.resolve(o[n++].apply(null, e)).then(i) : a;
+      r = i();
+    }
+    return Promise.resolve(r);
+  }
+}
+function checkReturnData(t, e) {
+  if (!isObject(e))
+    return !1;
+  if (t !== e) {
+    for (const r in t)
+      if (!(r in e))
+        return !1;
+  }
+  return !0;
+}
+class SyncWaterfallHook extends SyncHook {
+  emit(e) {
+    isObject(e) || error(`The data for the "${this.type}" hook should be an object.`);
+    for (const r of this.listeners)
+      try {
+        const o = r(e);
+        if (checkReturnData(e, o))
+          e = o;
+        else {
+          this.onerror(`A plugin returned an unacceptable value for the "${this.type}" type.`);
+          break;
+        }
+      } catch (o) {
+        warn(o), this.onerror(o);
+      }
+    return e;
+  }
+  constructor(e) {
+    super(), this.onerror = error, this.type = e;
+  }
+}
+class AsyncWaterfallHook extends SyncHook {
+  emit(e) {
+    isObject(e) || error(`The response data for the "${this.type}" hook must be an object.`);
+    const r = Array.from(this.listeners);
+    if (r.length > 0) {
+      let o = 0;
+      const n = (a) => (warn(a), this.onerror(a), e), i = (a) => {
+        if (checkReturnData(e, a)) {
+          if (e = a, o < r.length)
+            try {
+              return Promise.resolve(r[o++](e)).then(i, n);
+            } catch (s) {
+              return n(s);
+            }
+        } else
+          this.onerror(`A plugin returned an incorrect value for the "${this.type}" type.`);
+        return e;
+      };
+      return Promise.resolve(i(e));
+    }
+    return Promise.resolve(e);
+  }
+  constructor(e) {
+    super(), this.onerror = error, this.type = e;
+  }
+}
+class PluginSystem {
+  applyPlugin(e, r) {
+    assert(isPlainObject(e), "Plugin configuration is invalid.");
+    const o = e.name;
+    assert(o, "A name must be provided by the plugin."), this.registerPlugins[o] || (this.registerPlugins[o] = e, e.apply == null || e.apply.call(e, r), Object.keys(this.lifecycle).forEach((n) => {
+      const i = e[n];
+      i && this.lifecycle[n].on(i);
+    }));
+  }
+  removePlugin(e) {
+    assert(e, "A name is required.");
+    const r = this.registerPlugins[e];
+    assert(r, `The plugin "${e}" is not registered.`), Object.keys(r).forEach((o) => {
+      o !== "name" && this.lifecycle[o].remove(r[o]);
+    });
+  }
+  constructor(e) {
+    this.registerPlugins = {}, this.lifecycle = e, this.lifecycleKeys = Object.keys(e);
+  }
+}
+function assignRemoteInfo(t, e) {
+  const r = getRemoteEntryInfoFromSnapshot(e);
+  r.url || error(`The attribute remoteEntry of ${t.name} must not be undefined.`);
+  let o = sdk.getResourceUrl(e, r.url);
+  !sdk.isBrowserEnv() && !o.startsWith("http") && (o = `https:${o}`), t.type = r.type, t.entryGlobalName = r.globalName, t.entry = o, t.version = e.version, t.buildVersion = e.buildVersion;
+}
+function snapshotPlugin() {
+  return {
+    name: "snapshot-plugin",
+    async afterResolve(t) {
+      const { remote: e, pkgNameOrAlias: r, expose: o, origin: n, remoteInfo: i, id: a } = t;
+      if (!isRemoteInfoWithEntry(e) || !isPureRemoteEntry(e)) {
+        const { remoteSnapshot: s, globalSnapshot: l } = await n.snapshotHandler.loadRemoteSnapshotInfo({
+          moduleInfo: e,
+          id: a
+        });
+        assignRemoteInfo(i, s);
+        const c = {
+          remote: e,
+          preloadConfig: {
+            nameOrAlias: r,
+            exposes: [
+              o
+            ],
+            resourceCategory: "sync",
+            share: !1,
+            depsRemote: !1
+          }
+        }, u = await n.remoteHandler.hooks.lifecycle.generatePreloadAssets.emit({
+          origin: n,
+          preloadOptions: c,
+          remoteInfo: i,
+          remote: e,
+          remoteSnapshot: s,
+          globalSnapshot: l
+        });
+        return u && preloadAssets(i, n, u, !1), polyfills._extends({}, t, {
+          remoteSnapshot: s
+        });
+      }
+      return t;
+    }
+  };
+}
+function splitId(t) {
+  const e = t.split(":");
+  return e.length === 1 ? {
+    name: e[0],
+    version: void 0
+  } : e.length === 2 ? {
+    name: e[0],
+    version: e[1]
+  } : {
+    name: e[1],
+    version: e[2]
+  };
+}
+function traverseModuleInfo(t, e, r, o, n = {}, i) {
+  const a = getFMId(e), { value: s } = getInfoWithoutType(t, a), l = i || s;
+  if (l && !sdk.isManifestProvider(l) && (r(l, e, o), l.remotesInfo)) {
+    const c = Object.keys(l.remotesInfo);
+    for (const u of c) {
+      if (n[u])
+        continue;
+      n[u] = !0;
+      const d = splitId(u), p = l.remotesInfo[u];
+      traverseModuleInfo(t, {
+        name: d.name,
+        version: p.matchedVersion
+      }, r, !1, n, void 0);
+    }
+  }
+}
+const isExisted = (t, e) => document.querySelector(`${t}[${t === "link" ? "href" : "src"}="${e}"]`);
+function generatePreloadAssets(t, e, r, o, n) {
+  const i = [], a = [], s = [], l = /* @__PURE__ */ new Set(), c = /* @__PURE__ */ new Set(), { options: u } = t, { preloadConfig: d } = e, { depsRemote: p } = d;
+  if (traverseModuleInfo(o, r, (h, g, I) => {
+    let b;
+    if (I)
+      b = d;
+    else if (Array.isArray(p)) {
+      const M = p.find(($) => $.nameOrAlias === g.name || $.nameOrAlias === g.alias);
+      if (!M)
+        return;
+      b = defaultPreloadArgs(M);
+    } else if (p === !0)
+      b = d;
+    else
+      return;
+    const S = sdk.getResourceUrl(h, getRemoteEntryInfoFromSnapshot(h).url);
+    S && s.push({
+      name: g.name,
+      moduleInfo: {
+        name: g.name,
+        entry: S,
+        type: "remoteEntryType" in h ? h.remoteEntryType : "global",
+        entryGlobalName: "globalName" in h ? h.globalName : g.name,
+        shareScope: "",
+        version: "version" in h ? h.version : void 0
+      },
+      url: S
+    });
+    let E = "modules" in h ? h.modules : [];
+    const R = normalizePreloadExposes(b.exposes);
+    if (R.length && "modules" in h) {
+      var N;
+      E = h == null || (N = h.modules) == null ? void 0 : N.reduce((M, $) => (R?.indexOf($.moduleName) !== -1 && M.push($), M), []);
+    }
+    function T(M) {
+      const $ = M.map((O) => sdk.getResourceUrl(h, O));
+      return b.filter ? $.filter(b.filter) : $;
+    }
+    if (E) {
+      const M = E.length;
+      for (let $ = 0; $ < M; $++) {
+        const O = E[$], v = `${g.name}/${O.moduleName}`;
+        t.remoteHandler.hooks.lifecycle.handlePreloadModule.emit({
+          id: O.moduleName === "." ? g.name : v,
+          name: g.name,
+          remoteSnapshot: h,
+          preloadConfig: b,
+          remote: g,
+          origin: t
+        }), !getPreloaded(v) && (b.resourceCategory === "all" ? (i.push(...T(O.assets.css.async)), i.push(...T(O.assets.css.sync)), a.push(...T(O.assets.js.async)), a.push(...T(O.assets.js.sync))) : (b.resourceCategory = "sync") && (i.push(...T(O.assets.css.sync)), a.push(...T(O.assets.js.sync))), setPreloaded(v));
+      }
+    }
+  }, !0, {}, n), n.shared && n.shared.length > 0) {
+    const h = (g, I) => {
+      const b = getRegisteredShare(t.shareScopeMap, I.sharedName, g, t.sharedHandler.hooks.lifecycle.resolveShare);
+      b && typeof b.lib == "function" && (I.assets.js.sync.forEach((S) => {
+        l.add(S);
+      }), I.assets.css.sync.forEach((S) => {
+        c.add(S);
+      }));
+    };
+    n.shared.forEach((g) => {
+      var I;
+      const b = (I = u.shared) == null ? void 0 : I[g.sharedName];
+      if (!b)
+        return;
+      const S = g.version ? b.find((R) => R.version === g.version) : b;
+      if (!S)
+        return;
+      arrayOptions(S).forEach((R) => {
+        h(R, g);
+      });
+    });
+  }
+  const _ = a.filter((h) => !l.has(h) && !isExisted("script", h));
+  return {
+    cssAssets: i.filter((h) => !c.has(h) && !isExisted("link", h)),
+    jsAssetsWithoutEntry: _,
+    entryAssets: s.filter((h) => !isExisted("script", h.url))
+  };
+}
+const generatePreloadAssetsPlugin = function() {
+  return {
+    name: "generate-preload-assets-plugin",
+    async generatePreloadAssets(t) {
+      const { origin: e, preloadOptions: r, remoteInfo: o, remote: n, globalSnapshot: i, remoteSnapshot: a } = t;
+      return sdk.isBrowserEnv() ? isRemoteInfoWithEntry(n) && isPureRemoteEntry(n) ? {
+        cssAssets: [],
+        jsAssetsWithoutEntry: [],
+        entryAssets: [
+          {
+            name: n.name,
+            url: n.entry,
+            moduleInfo: {
+              name: o.name,
+              entry: n.entry,
+              type: o.type || "global",
+              entryGlobalName: "",
+              shareScope: ""
+            }
+          }
+        ]
+      } : (assignRemoteInfo(o, a), generatePreloadAssets(e, r, o, i, a)) : {
+        cssAssets: [],
+        jsAssetsWithoutEntry: [],
+        entryAssets: []
+      };
+    }
+  };
+};
+function getGlobalRemoteInfo(t, e) {
+  const r = getGlobalSnapshotInfoByModuleInfo({
+    name: e.name,
+    version: e.options.version
+  }), o = r && "remotesInfo" in r && r.remotesInfo && getInfoWithoutType(r.remotesInfo, t.name).value;
+  return o && o.matchedVersion ? {
+    hostGlobalSnapshot: r,
+    globalSnapshot: getGlobalSnapshot(),
+    remoteSnapshot: getGlobalSnapshotInfoByModuleInfo({
+      name: t.name,
+      version: o.matchedVersion
+    })
+  } : {
+    hostGlobalSnapshot: void 0,
+    globalSnapshot: getGlobalSnapshot(),
+    remoteSnapshot: getGlobalSnapshotInfoByModuleInfo({
+      name: t.name,
+      version: "version" in t ? t.version : void 0
+    })
+  };
+}
+class SnapshotHandler {
+  // eslint-disable-next-line max-lines-per-function
+  async loadRemoteSnapshotInfo({ moduleInfo: e, id: r, expose: o }) {
+    const { options: n } = this.HostInstance;
+    await this.hooks.lifecycle.beforeLoadRemoteSnapshot.emit({
+      options: n,
+      moduleInfo: e
+    });
+    let i = getGlobalSnapshotInfoByModuleInfo({
+      name: this.HostInstance.options.name,
+      version: this.HostInstance.options.version
+    });
+    i || (i = {
+      version: this.HostInstance.options.version || "",
+      remoteEntry: "",
+      remotesInfo: {}
+    }, addGlobalSnapshot({
+      [this.HostInstance.options.name]: i
+    })), i && "remotesInfo" in i && !getInfoWithoutType(i.remotesInfo, e.name).value && ("version" in e || "entry" in e) && (i.remotesInfo = polyfills._extends({}, i?.remotesInfo, {
+      [e.name]: {
+        matchedVersion: "version" in e ? e.version : e.entry
+      }
+    }));
+    const { hostGlobalSnapshot: a, remoteSnapshot: s, globalSnapshot: l } = this.getGlobalRemoteInfo(e), { remoteSnapshot: c, globalSnapshot: u } = await this.hooks.lifecycle.loadSnapshot.emit({
+      options: n,
+      moduleInfo: e,
+      hostGlobalSnapshot: a,
+      remoteSnapshot: s,
+      globalSnapshot: l
+    });
+    let d, p;
+    if (c)
+      if (sdk.isManifestProvider(c)) {
+        const m = sdk.isBrowserEnv() ? c.remoteEntry : c.ssrRemoteEntry || c.remoteEntry || "", _ = await this.getManifestJson(m, e, {}), y = setGlobalSnapshotInfoByModuleInfo(polyfills._extends({}, e, {
+          // The global remote may be overridden
+          // Therefore, set the snapshot key to the global address of the actual request
+          entry: m
+        }), _);
+        d = _, p = y;
+      } else {
+        const { remoteSnapshot: m } = await this.hooks.lifecycle.loadRemoteSnapshot.emit({
+          options: this.HostInstance.options,
+          moduleInfo: e,
+          remoteSnapshot: c,
+          from: "global"
+        });
+        d = m, p = u;
+      }
+    else if (isRemoteInfoWithEntry(e)) {
+      const m = await this.getManifestJson(e.entry, e, {}), _ = setGlobalSnapshotInfoByModuleInfo(e, m), { remoteSnapshot: y } = await this.hooks.lifecycle.loadRemoteSnapshot.emit({
+        options: this.HostInstance.options,
+        moduleInfo: e,
+        remoteSnapshot: m,
+        from: "global"
+      });
+      d = y, p = _;
+    } else
+      error(errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_007, errorCodes$1.runtimeDescMap, {
+        hostName: e.name,
+        hostVersion: e.version,
+        globalSnapshot: JSON.stringify(u)
+      }));
+    return await this.hooks.lifecycle.afterLoadSnapshot.emit({
+      id: r,
+      host: this.HostInstance,
+      options: n,
+      moduleInfo: e,
+      remoteSnapshot: d
+    }), {
+      remoteSnapshot: d,
+      globalSnapshot: p
+    };
+  }
+  getGlobalRemoteInfo(e) {
+    return getGlobalRemoteInfo(e, this.HostInstance);
+  }
+  async getManifestJson(e, r, o) {
+    const n = async () => {
+      let a = this.manifestCache.get(e);
+      if (a)
+        return a;
+      try {
+        let s = await this.loaderHook.lifecycle.fetch.emit(e, {});
+        (!s || !(s instanceof Response)) && (s = await fetch(e, {})), a = await s.json();
+      } catch (s) {
+        a = await this.HostInstance.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
+          id: e,
+          error: s,
+          from: "runtime",
+          lifecycle: "afterResolve",
+          origin: this.HostInstance
+        }), a || (delete this.manifestLoading[e], error(errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_003, errorCodes$1.runtimeDescMap, {
+          manifestUrl: e,
+          moduleName: r.name,
+          hostName: this.HostInstance.options.name
+        }, `${s}`)));
+      }
+      return assert(a.metaData && a.exposes && a.shared, `${e} is not a federation manifest`), this.manifestCache.set(e, a), a;
+    }, i = async () => {
+      const a = await n(), s = sdk.generateSnapshotFromManifest(a, {
+        version: e
+      }), { remoteSnapshot: l } = await this.hooks.lifecycle.loadRemoteSnapshot.emit({
+        options: this.HostInstance.options,
+        moduleInfo: r,
+        manifestJson: a,
+        remoteSnapshot: s,
+        manifestUrl: e,
+        from: "manifest"
+      });
+      return l;
+    };
+    return this.manifestLoading[e] || (this.manifestLoading[e] = i().then((a) => a)), this.manifestLoading[e];
+  }
+  constructor(e) {
+    this.loadingHostSnapshot = null, this.manifestCache = /* @__PURE__ */ new Map(), this.hooks = new PluginSystem({
+      beforeLoadRemoteSnapshot: new AsyncHook("beforeLoadRemoteSnapshot"),
+      loadSnapshot: new AsyncWaterfallHook("loadGlobalSnapshot"),
+      loadRemoteSnapshot: new AsyncWaterfallHook("loadRemoteSnapshot"),
+      afterLoadSnapshot: new AsyncWaterfallHook("afterLoadSnapshot")
+    }), this.manifestLoading = Global.__FEDERATION__.__MANIFEST_LOADING__, this.HostInstance = e, this.loaderHook = e.loaderHook;
+  }
+}
+class SharedHandler {
+  // register shared in shareScopeMap
+  registerShared(e, r) {
+    const { shareInfos: o, shared: n } = formatShareConfigs(e, r);
+    return Object.keys(o).forEach((a) => {
+      o[a].forEach((l) => {
+        !getRegisteredShare(this.shareScopeMap, a, l, this.hooks.lifecycle.resolveShare) && l && l.lib && this.setShared({
+          pkgName: a,
+          lib: l.lib,
+          get: l.get,
+          loaded: !0,
+          shared: l,
+          from: r.name
+        });
+      });
+    }), {
+      shareInfos: o,
+      shared: n
+    };
+  }
+  async loadShare(e, r) {
+    const { host: o } = this, n = getTargetSharedOptions({
+      pkgName: e,
+      extraOptions: r,
+      shareInfos: o.options.shared
+    });
+    n?.scope && await Promise.all(n.scope.map(async (c) => {
+      await Promise.all(this.initializeSharing(c, {
+        strategy: n.strategy
+      }));
+    }));
+    const i = await this.hooks.lifecycle.beforeLoadShare.emit({
+      pkgName: e,
+      shareInfo: n,
+      shared: o.options.shared,
+      origin: o
+    }), { shareInfo: a } = i;
+    assert(a, `Cannot find ${e} Share in the ${o.options.name}. Please ensure that the ${e} Share parameters have been injected`);
+    const s = getRegisteredShare(this.shareScopeMap, e, a, this.hooks.lifecycle.resolveShare), l = (c) => {
+      c.useIn || (c.useIn = []), addUniqueItem(c.useIn, o.options.name);
+    };
+    if (s && s.lib)
+      return l(s), s.lib;
+    if (s && s.loading && !s.loaded) {
+      const c = await s.loading;
+      return s.loaded = !0, s.lib || (s.lib = c), l(s), c;
+    } else if (s) {
+      const u = (async () => {
+        const d = await s.get();
+        return l(s), s.loaded = !0, s.lib = d, d;
+      })();
+      return this.setShared({
+        pkgName: e,
+        loaded: !1,
+        shared: s,
+        from: o.options.name,
+        lib: null,
+        loading: u
+      }), u;
+    } else {
+      if (r?.customShareInfo)
+        return !1;
+      const u = (async () => {
+        const d = await a.get();
+        a.lib = d, a.loaded = !0, l(a);
+        const p = getRegisteredShare(this.shareScopeMap, e, a, this.hooks.lifecycle.resolveShare);
+        return p && (p.lib = d, p.loaded = !0, p.from = a.from), d;
+      })();
+      return this.setShared({
+        pkgName: e,
+        loaded: !1,
+        shared: a,
+        from: o.options.name,
+        lib: null,
+        loading: u
+      }), u;
+    }
+  }
+  /**
+   * This function initializes the sharing sequence (executed only once per share scope).
+   * It accepts one argument, the name of the share scope.
+   * If the share scope does not exist, it creates one.
+   */
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  initializeSharing(e = DEFAULT_SCOPE, r) {
+    const { host: o } = this, n = r?.from, i = r?.strategy;
+    let a = r?.initScope;
+    const s = [];
+    if (n !== "build") {
+      const { initTokens: _ } = this;
+      a || (a = []);
+      let y = _[e];
+      if (y || (y = _[e] = {
+        from: this.host.name
+      }), a.indexOf(y) >= 0) return s;
+      a.push(y);
+    }
+    const l = this.shareScopeMap, c = o.options.name;
+    l[e] || (l[e] = {});
+    const u = l[e], d = (_, y) => {
+      var h;
+      const { version: g, eager: I } = y;
+      u[_] = u[_] || {};
+      const b = u[_], S = b[g], E = !!(S && (S.eager || (h = S.shareConfig) != null && h.eager));
+      (!S || S.strategy !== "loaded-first" && !S.loaded && (!I != !E ? I : c > S.from)) && (b[g] = y);
+    }, p = (_) => _ && _.init && _.init(l[e], a), m = async (_) => {
+      const { module: y } = await o.remoteHandler.getRemoteModuleAndOptions({
+        id: _
+      });
+      if (y.getEntry) {
+        let h;
+        try {
+          h = await y.getEntry();
+        } catch (g) {
+          h = await o.remoteHandler.hooks.lifecycle.errorLoadRemote.emit({
+            id: _,
+            error: g,
+            from: "runtime",
+            lifecycle: "beforeLoadShare",
+            origin: o
+          });
+        }
+        y.inited || (await p(h), y.inited = !0);
+      }
+    };
+    return Object.keys(o.options.shared).forEach((_) => {
+      o.options.shared[_].forEach((h) => {
+        h.scope.includes(e) && d(_, h);
+      });
+    }), (o.options.shareStrategy === "version-first" || i === "version-first") && o.options.remotes.forEach((_) => {
+      _.shareScope === e && s.push(m(_.name));
+    }), s;
+  }
+  // The lib function will only be available if the shared set by eager or runtime init is set or the shared is successfully loaded.
+  // 1. If the loaded shared already exists globally, then it will be reused
+  // 2. If lib exists in local shared, it will be used directly
+  // 3. If the local get returns something other than Promise, then it will be used directly
+  loadShareSync(e, r) {
+    const { host: o } = this, n = getTargetSharedOptions({
+      pkgName: e,
+      extraOptions: r,
+      shareInfos: o.options.shared
+    });
+    n?.scope && n.scope.forEach((s) => {
+      this.initializeSharing(s, {
+        strategy: n.strategy
+      });
+    });
+    const i = getRegisteredShare(this.shareScopeMap, e, n, this.hooks.lifecycle.resolveShare), a = (s) => {
+      s.useIn || (s.useIn = []), addUniqueItem(s.useIn, o.options.name);
+    };
+    if (i) {
+      if (typeof i.lib == "function")
+        return a(i), i.loaded || (i.loaded = !0, i.from === o.options.name && (n.loaded = !0)), i.lib;
+      if (typeof i.get == "function") {
+        const s = i.get();
+        if (!(s instanceof Promise))
+          return a(i), this.setShared({
+            pkgName: e,
+            loaded: !0,
+            from: o.options.name,
+            lib: s,
+            shared: i
+          }), s;
+      }
+    }
+    if (n.lib)
+      return n.loaded || (n.loaded = !0), n.lib;
+    if (n.get) {
+      const s = n.get();
+      if (s instanceof Promise) {
+        const l = r?.from === "build" ? errorCodes$1.RUNTIME_005 : errorCodes$1.RUNTIME_006;
+        throw new Error(errorCodes$1.getShortErrorMsg(l, errorCodes$1.runtimeDescMap, {
+          hostName: o.options.name,
+          sharedPkgName: e
+        }));
+      }
+      return n.lib = s, this.setShared({
+        pkgName: e,
+        loaded: !0,
+        from: o.options.name,
+        lib: n.lib,
+        shared: n
+      }), n.lib;
+    }
+    throw new Error(errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_006, errorCodes$1.runtimeDescMap, {
+      hostName: o.options.name,
+      sharedPkgName: e
+    }));
+  }
+  initShareScopeMap(e, r, o = {}) {
+    const { host: n } = this;
+    this.shareScopeMap[e] = r, this.hooks.lifecycle.initContainerShareScopeMap.emit({
+      shareScope: r,
+      options: n.options,
+      origin: n,
+      scopeName: e,
+      hostShareScopeMap: o.hostShareScopeMap
+    });
+  }
+  setShared({ pkgName: e, shared: r, from: o, lib: n, loading: i, loaded: a, get: s }) {
+    const { version: l, scope: c = "default" } = r, u = polyfills._object_without_properties_loose(r, [
+      "version",
+      "scope"
+    ]);
+    (Array.isArray(c) ? c : [
+      c
+    ]).forEach((p) => {
+      if (this.shareScopeMap[p] || (this.shareScopeMap[p] = {}), this.shareScopeMap[p][e] || (this.shareScopeMap[p][e] = {}), !this.shareScopeMap[p][e][l]) {
+        this.shareScopeMap[p][e][l] = polyfills._extends({
+          version: l,
+          scope: [
+            "default"
+          ]
+        }, u, {
+          lib: n,
+          loaded: a,
+          loading: i
+        }), s && (this.shareScopeMap[p][e][l].get = s);
+        return;
+      }
+      const m = this.shareScopeMap[p][e][l];
+      i && !m.loading && (m.loading = i), a && !m.loaded && (m.loaded = a), o && m.from !== o && (m.from = o);
+    });
+  }
+  _setGlobalShareScopeMap(e) {
+    const r = getGlobalShareScope(), o = e.id || e.name;
+    o && !r[o] && (r[o] = this.shareScopeMap);
+  }
+  constructor(e) {
+    this.hooks = new PluginSystem({
+      afterResolve: new AsyncWaterfallHook("afterResolve"),
+      beforeLoadShare: new AsyncWaterfallHook("beforeLoadShare"),
+      // not used yet
+      loadShare: new AsyncHook(),
+      resolveShare: new SyncWaterfallHook("resolveShare"),
+      // maybe will change, temporarily for internal use only
+      initContainerShareScopeMap: new SyncWaterfallHook("initContainerShareScopeMap")
+    }), this.host = e, this.shareScopeMap = {}, this.initTokens = {}, this._setGlobalShareScopeMap(e.options);
+  }
+}
+class RemoteHandler {
+  formatAndRegisterRemote(e, r) {
+    return (r.remotes || []).reduce((n, i) => (this.registerRemote(i, n, {
+      force: !1
+    }), n), e.remotes);
+  }
+  setIdToRemoteMap(e, r) {
+    const { remote: o, expose: n } = r, { name: i, alias: a } = o;
+    if (this.idToRemoteMap[e] = {
+      name: o.name,
+      expose: n
+    }, a && e.startsWith(i)) {
+      const s = e.replace(i, a);
+      this.idToRemoteMap[s] = {
+        name: o.name,
+        expose: n
+      };
+      return;
+    }
+    if (a && e.startsWith(a)) {
+      const s = e.replace(a, i);
+      this.idToRemoteMap[s] = {
+        name: o.name,
+        expose: n
+      };
+    }
+  }
+  // eslint-disable-next-line max-lines-per-function
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  async loadRemote(e, r) {
+    const { host: o } = this;
+    try {
+      const { loadFactory: n = !0 } = r || {
+        loadFactory: !0
+      }, { module: i, moduleOptions: a, remoteMatchInfo: s } = await this.getRemoteModuleAndOptions({
+        id: e
+      }), { pkgNameOrAlias: l, remote: c, expose: u, id: d, remoteSnapshot: p } = s, m = await i.get(d, u, r, p), _ = await this.hooks.lifecycle.onLoad.emit({
+        id: d,
+        pkgNameOrAlias: l,
+        expose: u,
+        exposeModule: n ? m : void 0,
+        exposeModuleFactory: n ? void 0 : m,
+        remote: c,
+        options: a,
+        moduleInstance: i,
+        origin: o
+      });
+      return this.setIdToRemoteMap(e, s), typeof _ == "function" ? _ : m;
+    } catch (n) {
+      const { from: i = "runtime" } = r || {
+        from: "runtime"
+      }, a = await this.hooks.lifecycle.errorLoadRemote.emit({
+        id: e,
+        error: n,
+        from: i,
+        lifecycle: "onLoad",
+        origin: o
+      });
+      if (!a)
+        throw n;
+      return a;
+    }
+  }
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  async preloadRemote(e) {
+    const { host: r } = this;
+    await this.hooks.lifecycle.beforePreloadRemote.emit({
+      preloadOps: e,
+      options: r.options,
+      origin: r
+    });
+    const o = formatPreloadArgs(r.options.remotes, e);
+    await Promise.all(o.map(async (n) => {
+      const { remote: i } = n, a = getRemoteInfo(i), { globalSnapshot: s, remoteSnapshot: l } = await r.snapshotHandler.loadRemoteSnapshotInfo({
+        moduleInfo: i
+      }), c = await this.hooks.lifecycle.generatePreloadAssets.emit({
+        origin: r,
+        preloadOptions: n,
+        remote: i,
+        remoteInfo: a,
+        globalSnapshot: s,
+        remoteSnapshot: l
+      });
+      c && preloadAssets(a, r, c);
+    }));
+  }
+  registerRemotes(e, r) {
+    const { host: o } = this;
+    e.forEach((n) => {
+      this.registerRemote(n, o.options.remotes, {
+        force: r?.force
+      });
+    });
+  }
+  async getRemoteModuleAndOptions(e) {
+    const { host: r } = this, { id: o } = e;
+    let n;
+    try {
+      n = await this.hooks.lifecycle.beforeRequest.emit({
+        id: o,
+        options: r.options,
+        origin: r
+      });
+    } catch (_) {
+      if (n = await this.hooks.lifecycle.errorLoadRemote.emit({
+        id: o,
+        options: r.options,
+        origin: r,
+        from: "runtime",
+        error: _,
+        lifecycle: "beforeRequest"
+      }), !n)
+        throw _;
+    }
+    const { id: i } = n, a = matchRemoteWithNameAndExpose(r.options.remotes, i);
+    assert(a, errorCodes$1.getShortErrorMsg(errorCodes$1.RUNTIME_004, errorCodes$1.runtimeDescMap, {
+      hostName: r.options.name,
+      requestId: i
+    }));
+    const { remote: s } = a, l = getRemoteInfo(s), c = await r.sharedHandler.hooks.lifecycle.afterResolve.emit(polyfills._extends({
+      id: i
+    }, a, {
+      options: r.options,
+      origin: r,
+      remoteInfo: l
+    })), { remote: u, expose: d } = c;
+    assert(u && d, `The 'beforeRequest' hook was executed, but it failed to return the correct 'remote' and 'expose' values while loading ${i}.`);
+    let p = r.moduleCache.get(u.name);
+    const m = {
+      host: r,
+      remoteInfo: l
+    };
+    return p || (p = new Module(m), r.moduleCache.set(u.name, p)), {
+      module: p,
+      moduleOptions: m,
+      remoteMatchInfo: c
+    };
+  }
+  registerRemote(e, r, o) {
+    const { host: n } = this, i = () => {
+      if (e.alias) {
+        const s = r.find((l) => {
+          var c;
+          return e.alias && (l.name.startsWith(e.alias) || ((c = l.alias) == null ? void 0 : c.startsWith(e.alias)));
+        });
+        assert(!s, `The alias ${e.alias} of remote ${e.name} is not allowed to be the prefix of ${s && s.name} name or alias`);
+      }
+      "entry" in e && sdk.isBrowserEnv() && !e.entry.startsWith("http") && (e.entry = new URL(e.entry, window.location.origin).href), e.shareScope || (e.shareScope = DEFAULT_SCOPE), e.type || (e.type = DEFAULT_REMOTE_TYPE);
+    };
+    this.hooks.lifecycle.beforeRegisterRemote.emit({
+      remote: e,
+      origin: n
+    });
+    const a = r.find((s) => s.name === e.name);
+    if (!a)
+      i(), r.push(e), this.hooks.lifecycle.registerRemote.emit({
+        remote: e,
+        origin: n
+      });
+    else {
+      const s = [
+        `The remote "${e.name}" is already registered.`,
+        "Please note that overriding it may cause unexpected errors."
+      ];
+      o?.force && (this.removeRemote(a), i(), r.push(e), this.hooks.lifecycle.registerRemote.emit({
+        remote: e,
+        origin: n
+      }), sdk.warn(s.join(" ")));
+    }
+  }
+  removeRemote(e) {
+    try {
+      const { host: o } = this, { name: n } = e, i = o.options.remotes.findIndex((s) => s.name === n);
+      i !== -1 && o.options.remotes.splice(i, 1);
+      const a = o.moduleCache.get(e.name);
+      if (a) {
+        const s = a.remoteInfo, l = s.entryGlobalName;
+        if (CurrentGlobal[l]) {
+          var r;
+          (r = Object.getOwnPropertyDescriptor(CurrentGlobal, l)) != null && r.configurable ? delete CurrentGlobal[l] : CurrentGlobal[l] = void 0;
+        }
+        const c = getRemoteEntryUniqueKey(a.remoteInfo);
+        globalLoading[c] && delete globalLoading[c], o.snapshotHandler.manifestCache.delete(s.entry);
+        let u = s.buildVersion ? sdk.composeKeyWithSeparator(s.name, s.buildVersion) : s.name;
+        const d = CurrentGlobal.__FEDERATION__.__INSTANCES__.findIndex((m) => s.buildVersion ? m.options.id === u : m.name === u);
+        if (d !== -1) {
+          const m = CurrentGlobal.__FEDERATION__.__INSTANCES__[d];
+          u = m.options.id || u;
+          const _ = getGlobalShareScope();
+          let y = !0;
+          const h = [];
+          Object.keys(_).forEach((g) => {
+            const I = _[g];
+            I && Object.keys(I).forEach((b) => {
+              const S = I[b];
+              S && Object.keys(S).forEach((E) => {
+                const R = S[E];
+                R && Object.keys(R).forEach((N) => {
+                  const T = R[N];
+                  T && typeof T == "object" && T.from === s.name && (T.loaded || T.loading ? (T.useIn = T.useIn.filter((M) => M !== s.name), T.useIn.length ? y = !1 : h.push([
+                    g,
+                    b,
+                    E,
+                    N
+                  ])) : h.push([
+                    g,
+                    b,
+                    E,
+                    N
+                  ]));
+                });
+              });
+            });
+          }), y && (m.shareScopeMap = {}, delete _[u]), h.forEach(([g, I, b, S]) => {
+            var E, R, N;
+            (N = _[g]) == null || (R = N[I]) == null || (E = R[b]) == null || delete E[S];
+          }), CurrentGlobal.__FEDERATION__.__INSTANCES__.splice(d, 1);
+        }
+        const { hostGlobalSnapshot: p } = getGlobalRemoteInfo(e, o);
+        if (p) {
+          const m = p && "remotesInfo" in p && p.remotesInfo && getInfoWithoutType(p.remotesInfo, e.name).key;
+          m && (delete p.remotesInfo[m], Global.__FEDERATION__.__MANIFEST_LOADING__[m] && delete Global.__FEDERATION__.__MANIFEST_LOADING__[m]);
+        }
+        o.moduleCache.delete(e.name);
+      }
+    } catch (o) {
+      logger.log("removeRemote fail: ", o);
+    }
+  }
+  constructor(e) {
+    this.hooks = new PluginSystem({
+      beforeRegisterRemote: new SyncWaterfallHook("beforeRegisterRemote"),
+      registerRemote: new SyncWaterfallHook("registerRemote"),
+      beforeRequest: new AsyncWaterfallHook("beforeRequest"),
+      onLoad: new AsyncHook("onLoad"),
+      handlePreloadModule: new SyncHook("handlePreloadModule"),
+      errorLoadRemote: new AsyncHook("errorLoadRemote"),
+      beforePreloadRemote: new AsyncHook("beforePreloadRemote"),
+      generatePreloadAssets: new AsyncHook("generatePreloadAssets"),
+      // not used yet
+      afterPreloadRemote: new AsyncHook(),
+      loadEntry: new AsyncHook()
+    }), this.host = e, this.idToRemoteMap = {};
+  }
+}
+const USE_SNAPSHOT = typeof FEDERATION_OPTIMIZE_NO_SNAPSHOT_PLUGIN == "boolean" ? !FEDERATION_OPTIMIZE_NO_SNAPSHOT_PLUGIN : !0;
+class ModuleFederation {
+  initOptions(e) {
+    this.registerPlugins(e.plugins);
+    const r = this.formatOptions(this.options, e);
+    return this.options = r, r;
+  }
+  async loadShare(e, r) {
+    return this.sharedHandler.loadShare(e, r);
+  }
+  // The lib function will only be available if the shared set by eager or runtime init is set or the shared is successfully loaded.
+  // 1. If the loaded shared already exists globally, then it will be reused
+  // 2. If lib exists in local shared, it will be used directly
+  // 3. If the local get returns something other than Promise, then it will be used directly
+  loadShareSync(e, r) {
+    return this.sharedHandler.loadShareSync(e, r);
+  }
+  initializeSharing(e = DEFAULT_SCOPE, r) {
+    return this.sharedHandler.initializeSharing(e, r);
+  }
+  initRawContainer(e, r, o) {
+    const n = getRemoteInfo({
+      name: e,
+      entry: r
+    }), i = new Module({
+      host: this,
+      remoteInfo: n
+    });
+    return i.remoteEntryExports = o, this.moduleCache.set(e, i), i;
+  }
+  // eslint-disable-next-line max-lines-per-function
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  async loadRemote(e, r) {
+    return this.remoteHandler.loadRemote(e, r);
+  }
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  async preloadRemote(e) {
+    return this.remoteHandler.preloadRemote(e);
+  }
+  initShareScopeMap(e, r, o = {}) {
+    this.sharedHandler.initShareScopeMap(e, r, o);
+  }
+  formatOptions(e, r) {
+    const { shared: o } = formatShareConfigs(e, r), { userOptions: n, options: i } = this.hooks.lifecycle.beforeInit.emit({
+      origin: this,
+      userOptions: r,
+      options: e,
+      shareInfo: o
+    }), a = this.remoteHandler.formatAndRegisterRemote(i, n), { shared: s } = this.sharedHandler.registerShared(i, n), l = [
+      ...i.plugins
+    ];
+    n.plugins && n.plugins.forEach((u) => {
+      l.includes(u) || l.push(u);
+    });
+    const c = polyfills._extends({}, e, r, {
+      plugins: l,
+      remotes: a,
+      shared: s
+    });
+    return this.hooks.lifecycle.init.emit({
+      origin: this,
+      options: c
+    }), c;
+  }
+  registerPlugins(e) {
+    const r = registerPlugins$1(e, this);
+    this.options.plugins = this.options.plugins.reduce((o, n) => (n && o && !o.find((i) => i.name === n.name) && o.push(n), o), r || []);
+  }
+  registerRemotes(e, r) {
+    return this.remoteHandler.registerRemotes(e, r);
+  }
+  registerShared(e) {
+    this.sharedHandler.registerShared(this.options, polyfills._extends({}, this.options, {
+      shared: e
+    }));
+  }
+  constructor(e) {
+    this.hooks = new PluginSystem({
+      beforeInit: new SyncWaterfallHook("beforeInit"),
+      init: new SyncHook(),
+      // maybe will change, temporarily for internal use only
+      beforeInitContainer: new AsyncWaterfallHook("beforeInitContainer"),
+      // maybe will change, temporarily for internal use only
+      initContainer: new AsyncWaterfallHook("initContainer")
+    }), this.version = "0.18.4", this.moduleCache = /* @__PURE__ */ new Map(), this.loaderHook = new PluginSystem({
+      // FIXME: may not be suitable , not open to the public yet
+      getModuleInfo: new SyncHook(),
+      createScript: new SyncHook(),
+      createLink: new SyncHook(),
+      fetch: new AsyncHook(),
+      loadEntryError: new AsyncHook(),
+      getModuleFactory: new AsyncHook()
+    }), this.bridgeHook = new PluginSystem({
+      beforeBridgeRender: new SyncHook(),
+      afterBridgeRender: new SyncHook(),
+      beforeBridgeDestroy: new SyncHook(),
+      afterBridgeDestroy: new SyncHook()
+    });
+    const r = USE_SNAPSHOT ? [
+      snapshotPlugin(),
+      generatePreloadAssetsPlugin()
+    ] : [], o = {
+      id: getBuilderId$1(),
+      name: e.name,
+      plugins: r,
+      remotes: [],
+      shared: {},
+      inBrowser: sdk.isBrowserEnv()
+    };
+    this.name = e.name, this.options = o, this.snapshotHandler = new SnapshotHandler(this), this.sharedHandler = new SharedHandler(this), this.remoteHandler = new RemoteHandler(this), this.shareScopeMap = this.sharedHandler.shareScopeMap, this.registerPlugins([
+      ...o.plugins,
+      ...e.plugins || []
+    ]), this.options = this.formatOptions(o, e);
+  }
+}
+var index = /* @__PURE__ */ Object.freeze({
+  __proto__: null
+});
+index_cjs$2.loadScript = sdk.loadScript;
+index_cjs$2.loadScriptNode = sdk.loadScriptNode;
+index_cjs$2.CurrentGlobal = CurrentGlobal;
+index_cjs$2.Global = Global;
+index_cjs$2.Module = Module;
+index_cjs$2.ModuleFederation = ModuleFederation;
+index_cjs$2.addGlobalSnapshot = addGlobalSnapshot;
+index_cjs$2.assert = assert;
+index_cjs$2.getGlobalFederationConstructor = getGlobalFederationConstructor;
+index_cjs$2.getGlobalSnapshot = getGlobalSnapshot;
+index_cjs$2.getInfoWithoutType = getInfoWithoutType;
+index_cjs$2.getRegisteredShare = getRegisteredShare;
+index_cjs$2.getRemoteEntry = getRemoteEntry;
+index_cjs$2.getRemoteInfo = getRemoteInfo;
+index_cjs$2.helpers = helpers;
+index_cjs$2.isStaticResourcesEqual = isStaticResourcesEqual;
+index_cjs$2.matchRemoteWithNameAndExpose = matchRemoteWithNameAndExpose;
+index_cjs$2.registerGlobalPlugins = registerGlobalPlugins;
+index_cjs$2.resetFederationGlobalInfo = resetFederationGlobalInfo;
+index_cjs$2.safeWrapper = safeWrapper;
+index_cjs$2.satisfy = satisfy;
+index_cjs$2.setGlobalFederationConstructor = setGlobalFederationConstructor;
+index_cjs$2.setGlobalFederationInstance = setGlobalFederationInstance;
+index_cjs$2.types = index;
+var utils_cjs = {}, runtimeCore$1 = index_cjs$2;
+function getBuilderId() {
+  return typeof FEDERATION_BUILD_IDENTIFIER < "u" ? FEDERATION_BUILD_IDENTIFIER : "";
+}
+function getGlobalFederationInstance(t, e) {
+  const r = getBuilderId();
+  return runtimeCore$1.CurrentGlobal.__FEDERATION__.__INSTANCES__.find((o) => !!(r && o.options.id === r || o.options.name === t && !o.options.version && !e || o.options.name === t && e && o.options.version === e));
+}
+utils_cjs.getGlobalFederationInstance = getGlobalFederationInstance;
+var runtimeCore = index_cjs$2, errorCodes = index_cjs, utils = utils_cjs;
+function createInstance(t) {
+  const e = runtimeCore.getGlobalFederationConstructor() || runtimeCore.ModuleFederation, r = new e(t);
+  return runtimeCore.setGlobalFederationInstance(r), r;
+}
+let FederationInstance = null;
+function init(t) {
+  const e = utils.getGlobalFederationInstance(t.name, t.version);
+  return e ? (e.initOptions(t), FederationInstance || (FederationInstance = e), e) : (FederationInstance = createInstance(t), FederationInstance);
+}
+function loadRemote(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.loadRemote.apply(FederationInstance, t);
+}
+function loadShare(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.loadShare.apply(FederationInstance, t);
+}
+function loadShareSync(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.loadShareSync.apply(FederationInstance, t);
+}
+function preloadRemote(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.preloadRemote.apply(FederationInstance, t);
+}
+function registerRemotes(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.registerRemotes.apply(FederationInstance, t);
+}
+function registerPlugins(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.registerPlugins.apply(FederationInstance, t);
+}
+function getInstance() {
+  return FederationInstance;
+}
+function registerShared(...t) {
+  return runtimeCore.assert(FederationInstance, errorCodes.getShortErrorMsg(errorCodes.RUNTIME_009, errorCodes.runtimeDescMap)), FederationInstance.registerShared.apply(FederationInstance, t);
+}
+runtimeCore.setGlobalFederationConstructor(runtimeCore.ModuleFederation);
+index_cjs$3.Module = runtimeCore.Module;
+index_cjs$3.ModuleFederation = runtimeCore.ModuleFederation;
+index_cjs$3.getRemoteEntry = runtimeCore.getRemoteEntry;
+index_cjs$3.getRemoteInfo = runtimeCore.getRemoteInfo;
+index_cjs$3.loadScript = runtimeCore.loadScript;
+index_cjs$3.loadScriptNode = runtimeCore.loadScriptNode;
+index_cjs$3.registerGlobalPlugins = runtimeCore.registerGlobalPlugins;
+index_cjs$3.createInstance = createInstance;
+index_cjs$3.getInstance = getInstance;
+var init_1 = index_cjs$3.init = init;
+index_cjs$3.loadRemote = loadRemote;
+index_cjs$3.loadShare = loadShare;
+index_cjs$3.loadShareSync = loadShareSync;
+index_cjs$3.preloadRemote = preloadRemote;
+index_cjs$3.registerPlugins = registerPlugins;
+index_cjs$3.registerRemotes = registerRemotes;
+index_cjs$3.registerShared = registerShared;
+let initResolve, initReject;
+const initPromise = new Promise((t, e) => {
+  initResolve = t, initReject = e;
+});
+var HCMThanks__mf_v__runtimeInit__mf_v__ = {
+  initPromise,
+  initResolve,
+  initReject
+};
+export {
+  HCMThanks__mf_v__runtimeInit__mf_v__ as H,
+  init_1 as a,
+  index_cjs$3 as i
+};
